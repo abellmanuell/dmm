@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@import "tailwindcss";
+
+/* Swiper imports */
+/* @import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination"; */
+
+@theme {
+  /* Fonts Theme */
+  --font-nunito: "Nunito Variable", sans-serif;
+  --font-bebas-neue: "Bebas Neue", sans-serif;
+  /* Colors definitions */
+  --color-chamois: oklch(89.659% 0.04245 66.086);
+  --color-chamois-50: oklch(100% 0 none);
+  --color-chamois-100: oklch(100% 0 none);
+  --color-chamois-200: oklch(100% 0 none);
+  --color-chamois-300: oklch(100% 0 none);
+  --color-chamois-400: oklch(95.15% 0.01994 69.993);
+  --color-chamois-500: oklch(89.659% 0.04245 66.086);
+  --color-chamois-600: oklch(82.315% 0.07447 65.815);
+  --color-chamois-700: oklch(74.96% 0.10578 63.624);
+  --color-chamois-800: oklch(67.985% 0.13243 61.214);
+  --color-chamois-900: oklch(57.795% 0.11671 60.123);
+  --color-chamois-950: oklch(52.089% 0.10401 60.157);
+
+  --color-tequila: oklch(93.879% 0.04296 67.264);
+  --color-tequila-50: oklch(100% 0 none);
+  --color-tequila-100: oklch(100% 0 none);
+  --color-tequila-200: oklch(100% 0 none);
+  --color-tequila-300: oklch(100% 0 none);
+  --color-tequila-400: oklch(98.784% 0.00754 61.456);
+  --color-tequila-500: oklch(93.879% 0.04296 67.264);
+  --color-tequila-600: oklch(87.376% 0.09105 66.163);
+  --color-tequila-700: oklch(81.397% 0.1356 63.805);
+  --color-tequila-800: oklch(76.128% 0.17034 58.583);
+  --color-tequila-900: oklch(69.029% 0.17521 52.998);
+  --color-tequila-950: oklch(62.895% 0.15883 53.399);
+
+  --color-dark-burgundy: oklch(33.552% 0.12291 29.317);
+  --color-dark-burgundy-50: oklch(63.595% 0.20637 28.217);
+  --color-dark-burgundy-100: oklch(61.529% 0.22059 29.064);
+  --color-dark-burgundy-200: oklch(56.641% 0.21789 29.561);
+  --color-dark-burgundy-300: oklch(49.197% 0.18737 29.676);
+  --color-dark-burgundy-400: oklch(41.614% 0.15686 29.462);
+  --color-dark-burgundy-500: oklch(33.552% 0.12291 29.317);
+  --color-dark-burgundy-600: oklch(21.748% 0.07102 29.202);
+  --color-dark-burgundy-700: oklch(4.2201% 0.01732 29.234);
+  --color-dark-burgundy-800: oklch(0% 0 none);
+  --color-dark-burgundy-900: oklch(0% 0 none);
+  --color-dark-burgundy-950: oklch(0% 0 none);
+
+  --color-pumpkin: oklch(73.12% 0.18245 50.437);
+  --color-pumpkin-50: oklch(94.506% 0.03391 58.824);
+  --color-pumpkin-100: oklch(91.709% 0.05213 58.656);
+  --color-pumpkin-200: oklch(86.518% 0.08802 58.447);
+  --color-pumpkin-300: oklch(81.66% 0.12253 56.982);
+  --color-pumpkin-400: oklch(77.035% 0.15547 54.328);
+  --color-pumpkin-500: oklch(73.12% 0.18245 50.437);
+  --color-pumpkin-600: oklch(65.393% 0.18292 46.31);
+  --color-pumpkin-700: oklch(53.22% 0.14774 46.778);
+  --color-pumpkin-800: oklch(40.461% 0.1095 48.413);
+  --color-pumpkin-900: oklch(26.609% 0.06769 52.821);
+  --color-pumpkin-950: oklch(19.031% 0.04478 59.669);
+
+  --color-red-orange: oklch(65.06% 0.23056 29.027);
+  --color-red-orange-50: oklch(94.461% 0.02763 23.146);
+  --color-red-orange-100: oklch(90.363% 0.04985 22.695);
+  --color-red-orange-200: oklch(82.408% 0.09624 24.049);
+  --color-red-orange-300: oklch(75.331% 0.1459 25.117);
+  --color-red-orange-400: oklch(69.276% 0.19247 27.255);
+  --color-red-orange-500: oklch(65.06% 0.23056 29.027);
+  --color-red-orange-600: oklch(60.52% 0.24352 29.749);
+  --color-red-orange-700: oklch(49.721% 0.19885 29.841);
+  --color-red-orange-800: oklch(38.313% 0.15134 30.238);
+  --color-red-orange-900: oklch(26.213% 0.10045 30.685);
+  --color-red-orange-950: oklch(19.47% 0.07253 32.638);
+
+  --breakpoint-xxxs: 16.063rem;
+  --breakpoint-xxs: 21.125rem;
+  --breakpoint-xs: 30rem;
+}
+
+@layer base {
+  html {
+    @apply font-nunito; /* Applies your custom 'Nunito' font family to the entire HTML document */
+  }
+}
+
+@layer utilities {
+  .bg-noise {
+    background-image: url("./images/noise-texture.png");
+    background-repeat: repeat;
+    background-size: 500px 500px;
+    pointer-events: none;
+    opacity: 0.09786;
+  }
+
+  .heading-with-arrow {
+    background: url("./images/icons/white-hand-drawn-arrow-short.svg") no-repeat;
+    background-position: calc(100% - 20px) 90%;
+    min-height: 114px;
+  }
+
+  @media screen and (min-width: 988px) {
+    .heading-with-arrow {
+      background: url("./images/icons/white-hand-drawn-arrow.svg") no-repeat;
+      background-position: calc(100% - 10px) 90%;
+    }
+  }
+
+  @media screen and (min-width: 1180px) {
+    .heading-with-arrow {
+      background-position: calc(100% - 140px) 90%;
+    }
+  }
+
+  @media screen and (min-width: 1420px) {
+    .heading-with-arrow {
+      background-position: calc(100% - 200px) 90%;
+    }
+  }
+
+  @media (max-width: 769px) {
+    .swiper-wrapper-grid {
+      display: grid !important;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .swiper-slide-grid {
+      width: 100% !important;
+    }
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* @layer components {
+  .paper-mask {
+    mask: url("./assets/images/mask-group.svg") no-repeat center / contain;
+    -webkit-mask: url("./assets/images/mask-group.svg") no-repeat center / cover;
+
+    background: url("./assets/images/paper-clip.svg") no-repeat center / contain;
+  }
+
+  .paper-red-mask {
+    mask: url("./assets/images/mask-group.svg") no-repeat center / cover;
+    -webkit-mask: url("./assets/images/mask-group.svg") no-repeat center / cover;
+
+    background: url("./assets/images/paper-clip-red.svg") no-repeat center /
+      contain;
+    background-position: right top;
+  }
+}
+ */
