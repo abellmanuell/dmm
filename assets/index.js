@@ -1,3 +1,17 @@
+document.querySelectorAll(".mi-item").forEach((item) => {
+  const header = item.querySelector(".mi-header");
+  const answer = item.querySelector(".mi-answer");
+  const icon = item.querySelector(".mi-icon");
+
+  setupFAQItem(
+    header,
+    answer,
+    icon,
+    "./assets/images/icons/icon-greater-than.svg",
+    "./assets/images/icons/icon-up-arrow.svg"
+  );
+});
+
 document.querySelectorAll(".faq-item").forEach((item) => {
   const header = item.querySelector(".faq-header");
   const answer = item.querySelector(".faq-answer");
