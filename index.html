@@ -6,13 +6,14 @@
     <link href="/vite.svg" rel="icon" type="image/svg+xml" />
     <meta content="width=device-width,initial-scale=1" name="viewport" />
     <title>Vite + React + TS</title>
-    <script src="./assets/index.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
 
     <link href="./assets/output.css" rel="stylesheet" />
+    <script src="./assets/index.js" defer></script>
+
     <style>
       .paper-mask {
         background: url("./assets/images/paper-clip.svg") no-repeat center /
@@ -25,90 +26,15 @@
         background-position: right top;
       }
     </style>
-    <style type="text/css">
-      .rfm-marquee-container {
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        width: var(--width);
-        transform: var(--transform);
-      }
-      .rfm-marquee-container:hover div {
-        animation-play-state: var(--pause-on-hover);
-      }
-      .rfm-marquee-container:active div {
-        animation-play-state: var(--pause-on-click);
-      }
-      .rfm-overlay {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-      }
-      .rfm-overlay::after,
-      .rfm-overlay::before {
-        background: linear-gradient(
-          to right,
-          var(--gradient-color),
-          rgba(255, 255, 255, 0)
-        );
-        content: "";
-        height: 100%;
-        position: absolute;
-        width: var(--gradient-width);
-        z-index: 2;
-        pointer-events: none;
-        touch-action: none;
-      }
-      .rfm-overlay::after {
-        right: 0;
-        top: 0;
-        transform: rotateZ(180deg);
-      }
-      .rfm-overlay::before {
-        left: 0;
-        top: 0;
-      }
-      .rfm-marquee {
-        flex: 0 0 auto;
-        min-width: var(--min-width);
-        z-index: 1;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        animation: scroll var(--duration) linear var(--delay)
-          var(--iteration-count);
-        animation-play-state: var(--play);
-        animation-delay: var(--delay);
-        animation-direction: var(--direction);
-      }
-      @keyframes scroll {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-      .rfm-initial-child-container {
-        flex: 0 0 auto;
-        display: flex;
-        min-width: auto;
-        flex-direction: row;
-        align-items: center;
-      }
-      .rfm-child {
-        transform: var(--transform);
-      }
-    </style>
   </head>
   <body>
-    <div id="root">
+    <div>
       <div class="bg-chamois-500 relative">
         <div
           class="bg-noise absolute inset-0 opacity-20 mix-blend-overlay"
         ></div>
         <div class="relative z-5">
+          <!--------- PROMOTION BANNER --------------->
           <div
             class="bg-dark-burgundy-500 font-bebas-neue flex h-10 items-center text-xs text-white"
           >
@@ -597,12 +523,15 @@
               </div>
             </div>
           </div>
+          <!------------ END PROMOTIONAL BANNER -->
+
+          <!------------ HEADER NAV ---------------------->
           <div class="relative z-10">
             <div
               class="mx-auto flex h-16 max-w-7xl justify-between px-4 lg:max-w-[1400px] lg:justify-start xl:max-w-[1500px] 2xl:px-0"
             >
               <div class="flex items-center">
-                <a href="#/" data-discover="true"
+                <a href="./category-page.html" data-discover="true"
                   ><img
                     src="./assets/images/logo.svg"
                     alt="Detective Mystery Masters Logo"
@@ -694,7 +623,7 @@
               </div>
               <div class="flex items-center space-x-6">
                 <a
-                  href="/all-products"
+                  href="./category-page.html"
                   class="hidden items-center space-x-4 rounded-full px-7 py-2 font-bold uppercase outline-1 duration-150 ease-in md:block"
                   data-discover="true"
                   ><span>Shop All</span></a
@@ -754,6 +683,8 @@
               </div>
             </div>
           </div>
+          <!------------ END HEADER NAV  -->
+
           <div
             class="mx-auto grid max-w-7xl grid-cols-1 gap-2 px-4 pt-0 md:gap-8 md:!p-4 lg:max-w-[1400px] lg:grid-cols-2 xl:max-w-[1500px] 2xl:px-0"
           >
@@ -1182,13 +1113,14 @@
                 ></a>
               </div>
               <a
-                href="#/"
+                href="/category-page.html"
                 class="flex items-center justify-center space-x-4 rounded-full px-7 py-4 font-bold uppercase outline-1 duration-150 ease-in"
                 data-discover="true"
                 ><span>Shop All</span></a
               >
             </section>
           </div>
+
           <div class="bg-tequila-500 relative z-5 mt-[19px] rounded-3xl">
             <div
               class="mx-auto grid max-w-7xl grid-cols-1 place-items-center gap-y-12 px-4 py-20 sm:gap-20 md:px-10 md:!py-[112px] lg:max-w-[1400px] lg:grid-cols-2 xl:max-w-[1500px] 2xl:px-0"
@@ -1328,7 +1260,7 @@
                     ></a>
                   </div>
                   <a
-                    href="#/"
+                    href="./category-page.html"
                     class="flex items-center justify-center space-x-4 rounded-full px-7 py-4 font-bold uppercase outline-1 duration-150 ease-in"
                     data-discover="true"
                     ><span>Shop All</span></a
@@ -1337,6 +1269,8 @@
               </div>
             </div>
           </div>
+
+          <!----------------- BEST SELLING SECTION ----------->
           <div
             class="relative z-5 mx-auto max-w-7xl px-4 py-20 md:!py-[112px] lg:max-w-[1400px] xl:max-w-[1500px] 2xl:px-0"
           >
@@ -1347,7 +1281,7 @@
                 Best Selling
               </h2>
               <a
-                href="#/"
+                href="./category-page.html"
                 class="hidden items-center space-x-4 self-end rounded-full px-7 py-4 font-bold uppercase outline-1 duration-150 ease-in md:block"
                 data-discover="true"
                 ><span>Shop All</span></a
@@ -1394,7 +1328,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !px-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !px-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -1572,7 +1506,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !pl-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !pl-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -1750,7 +1684,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !pl-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !pl-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -1928,7 +1862,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !pl-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !pl-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -2106,7 +2040,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !pl-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !pl-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -2284,7 +2218,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !pl-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !pl-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -2462,7 +2396,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !pl-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !pl-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -2640,7 +2574,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !pl-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !pl-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -2818,7 +2752,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !pl-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !pl-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -2963,7 +2897,7 @@
               </div>
               <div class="flex justify-center lg:hidden">
                 <a
-                  href="#/"
+                  href="./category-page.html"
                   class="flex items-center space-x-4 rounded-full px-7 py-4 font-bold uppercase outline-1 duration-150 ease-in"
                   data-discover="true"
                   ><span>Shop All</span></a
@@ -2995,7 +2929,9 @@
               </section>
             </div>
           </div>
+          <!----------------- END BEST SELLING SECTION ----------->
 
+          <!------------------ FEATURED LOGO ----------->
           <div class="bg-dark-burgundy-500 relative h-[210px] w-full py-8">
             <h3 class="font-bebas-neue pb-6 text-center text-lg text-white">
               detective games featured in
@@ -3199,8 +3135,9 @@
               </div>
             </div>
           </div>
+          <!------------------ END FEATURED LOGO ----------->
 
-          <!-- DETECTIVE CASES -->
+          <!----------------- DETECTIVE CASES -->
           <div
             class="relative z-5 mx-auto max-w-7xl px-4 py-20 md:!py-[112px] lg:max-w-[1400px] xl:max-w-[1500px] 2xl:px-0"
           >
@@ -3211,7 +3148,7 @@
                 Detective Cases
               </h2>
               <a
-                href="#/"
+                href="./category-page.html"
                 class="hidden items-center space-x-4 self-end rounded-full px-7 py-4 font-bold uppercase outline-1 duration-150 ease-in md:block"
                 data-discover="true"
                 ><span>Shop All</span></a
@@ -3258,7 +3195,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !px-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !px-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -3436,7 +3373,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !pl-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !pl-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -3614,7 +3551,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !pl-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !pl-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -3792,7 +3729,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !pl-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !pl-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -3970,7 +3907,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !pl-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !pl-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -4148,7 +4085,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !pl-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !pl-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -4326,7 +4263,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !pl-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !pl-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -4504,7 +4441,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !pl-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !pl-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -4682,7 +4619,7 @@
                               index="0"
                             >
                               <div
-                                class="relative flex flex-col justify-center !pl-3 pt-[20px]"
+                                class="relative flex flex-col justify-center !pl-3 pt-[28px]"
                               >
                                 <div class="flex items-center text-white">
                                   <svg
@@ -4827,7 +4764,7 @@
               </div>
               <div class="flex justify-center lg:hidden">
                 <a
-                  href="#/"
+                  href="./category-page.html"
                   class="flex items-center space-x-4 rounded-full px-7 py-4 font-bold uppercase outline-1 duration-150 ease-in"
                   data-discover="true"
                   ><span>Shop All</span></a
@@ -4860,6 +4797,7 @@
             </div>
           </div>
 
+          <!----------------- SHOP BY CATEGORY SECTION ----------------->
           <div class="bg-dark-burgundy-500 relative rounded-t-4xl">
             <div
               class="bg-noise absolute inset-0 opacity-20 mix-blend-overlay"
@@ -5123,6 +5061,9 @@
               </div>
             </div>
           </div>
+          <!----------------- END SHOP BY CATEGORY SECTION ----------------->
+
+          <!----------------- TESTIMONIES SECTION ----------------->
           <div class="bg-dark-burgundy-500 relative z-2">
             <div
               class="mx-auto max-w-7xl px-4 py-20 md:px-10 md:pt-[103px] md:pb-[128px] lg:max-w-[1400px] xl:max-w-[1500px] 2xl:px-0"
@@ -5322,6 +5263,7 @@
                 </div>
               </section>
             </div>
+
             <div class="pt-[26.89px] pb-20 lg:pb-[128px]">
               <div
                 class="mx-auto max-w-7xl px-4 lg:max-w-[1400px] xl:max-w-[1500px] 2xl:px-0"
@@ -6041,6 +5983,7 @@
                   </div>
                 </div>
               </div>
+
               <section
                 class="flex justify-center px-4 text-center md:px-[86px]"
               >
@@ -6060,6 +6003,9 @@
               </section>
             </div>
           </div>
+          <!----------------- END TESTIMONIES SECTION ----------------->
+
+          <!------------------------- FAQ SECTION ------------------>
           <div
             class="relative z-5 mx-auto grid max-w-7xl gap-12 overflow-clip px-4 py-20 md:!py-[128px] lg:max-w-[1400px] lg:grid-cols-2 xl:max-w-[1500px] 2xl:px-0"
           >
@@ -6069,7 +6015,7 @@
               >
                 Frequently Asked<br class="lg:hidden" />Questions
               </h2>
-              <p class="mt-4 !leading-7 leading-6 text-[#444444]">
+              <p class="mt-4 !leading-7 text-[#444444]">
                 Everything you need to know about the Detective Mystery Masters.
               </p>
             </div>
@@ -6215,6 +6161,9 @@
               </section>
             </div>
           </div>
+          <!------------------------------ END FAQ SECTION ----------------------->
+
+          <!------------------------------ FOOTER SECTION ------------------------>
           <div class="relative z-5 rounded-t-3xl bg-black text-white">
             <div
               class="md:!w[1280px] relative z-5 mx-auto max-w-7xl px-4 py-6 md:pt-[83px] md:pb-[62px] lg:max-w-[1400px] xl:max-w-[1500px] 2xl:px-0"
@@ -6243,7 +6192,7 @@
                       placeholder="Email Address"
                       type="text"
                     /><a
-                      href="#/"
+                      href="./category-page.html"
                       class="bg-pumpkin-500 xs:inline-block xs:w-auto flex w-full items-center justify-center space-x-4 rounded-full p-4 font-bold uppercase outline-1 duration-150 ease-in outline-none"
                       data-discover="true"
                       ><span
@@ -6354,7 +6303,7 @@
                     <ul>
                       <li class="flex !h-10 items-center opacity-90">
                         <a
-                          href="#/"
+                          href="./category-page.html"
                           class="!leading-6 tracking-[0.6px]"
                           data-discover="true"
                           >Shipping Information</a
@@ -6362,7 +6311,7 @@
                       </li>
                       <li class="flex !h-10 items-center opacity-90">
                         <a
-                          href="#/"
+                          href="./category-page.html"
                           class="!leading-6 tracking-[0.6px]"
                           data-discover="true"
                           >Refund Policy</a
@@ -6378,7 +6327,7 @@
                       </li>
                       <li class="flex !h-10 items-center opacity-90">
                         <a
-                          href="#/"
+                          href="./category-page.html"
                           class="!leading-6 tracking-[0.6px]"
                           data-discover="true"
                           >Privacy Policy</a
@@ -6386,7 +6335,7 @@
                       </li>
                       <li class="flex !h-10 items-center opacity-90">
                         <a
-                          href="#/"
+                          href="./category-page.html"
                           class="!leading-6 tracking-[0.6px]"
                           data-discover="true"
                           >Print & play</a
@@ -6394,7 +6343,7 @@
                       </li>
                       <li class="flex !h-10 items-center opacity-90">
                         <a
-                          href="#/"
+                          href="./category-page.html"
                           class="!leading-6 tracking-[0.6px]"
                           data-discover="true"
                           >Terms of Service</a
@@ -6460,6 +6409,7 @@
               </div>
             </div>
           </div>
+          <!------------------------------ END FOOTER SECTION ------------------------>
         </div>
       </div>
     </div>
@@ -6467,6 +6417,3 @@
 </html>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<!-- <script></script> -->
