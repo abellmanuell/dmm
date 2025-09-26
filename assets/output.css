@@ -2273,6 +2273,11 @@
       padding-bottom: 62px;
     }
   }
+  .md\:pb-\[94px\] {
+    @media (width >= 48rem) {
+      padding-bottom: 94px;
+    }
+  }
   .md\:pb-\[107px\] {
     @media (width >= 48rem) {
       padding-bottom: 107px;
@@ -2464,6 +2469,16 @@
       gap: calc(var(--spacing) * 12);
     }
   }
+  .lg\:gap-20 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:gap-24 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 24);
+    }
+  }
   .lg\:space-y-0 {
     @media (width >= 64rem) {
       :where(& > :not(:last-child)) {
@@ -2478,6 +2493,11 @@
       column-gap: calc(var(--spacing) * 10);
     }
   }
+  .lg\:gap-x-24 {
+    @media (width >= 64rem) {
+      column-gap: calc(var(--spacing) * 24);
+    }
+  }
   .lg\:space-x-6 {
     @media (width >= 64rem) {
       :where(& > :not(:last-child)) {
@@ -2485,6 +2505,11 @@
         margin-inline-start: calc(calc(var(--spacing) * 6) * var(--tw-space-x-reverse));
         margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
       }
+    }
+  }
+  .lg\:gap-y-24 {
+    @media (width >= 64rem) {
+      row-gap: calc(var(--spacing) * 24);
     }
   }
   .lg\:px-0 {
