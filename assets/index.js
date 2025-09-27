@@ -1,3 +1,5 @@
+// import Swiper from "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css";
+
 document.querySelectorAll(".mi-item").forEach((item) => {
   const header = item.querySelector(".mi-header");
   const answer = item.querySelector(".mi-answer");
@@ -7,8 +9,8 @@ document.querySelectorAll(".mi-item").forEach((item) => {
     header,
     answer,
     icon,
-    "./assets/images/icons/icon-greater-than.svg",
-    "./assets/images/icons/icon-up-arrow.svg"
+    "./assets/images/icons/icon-up-arrow.svg",
+    "./assets/images/icons/icon-greater-than.svg"
   );
 });
 
@@ -34,10 +36,10 @@ function setupFAQItem(headerEl, answerEl, iconEl, addIcon, minusIcon) {
 
     if (isOpen) {
       iconEl.src = minusIcon;
-      answerEl.style.display = "block";
+      answerEl.style.display = "none";
     } else {
       iconEl.src = addIcon;
-      answerEl.style.display = "none";
+      answerEl.style.display = "block";
     }
   });
 }
