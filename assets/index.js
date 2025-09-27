@@ -36,10 +36,10 @@ function setupFAQItem(headerEl, answerEl, iconEl, addIcon, minusIcon) {
 
     if (isOpen) {
       iconEl.src = minusIcon;
-      answerEl.style.display = "none";
+      answerEl.style.display = "block";
     } else {
       iconEl.src = addIcon;
-      answerEl.style.display = "block";
+      answerEl.style.display = "none";
     }
   });
 }
