@@ -145,7 +145,6 @@
     text-align: center;
     font-size: 18px;
 
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,6 +155,26 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  /* .swiperProduct {
+    height: auto;
+    width: 100%;
+  } */
+
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  #zoomModal img {
+    animation: zoomIn 0.3s ease-out;
   }
 }
 
