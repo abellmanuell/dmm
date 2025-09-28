@@ -336,3 +336,33 @@ function initResponsiveSwiper() {
 }
 
 initResponsiveSwiper();
+
+document.querySelectorAll(".zoom-trigger").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const slide = btn.closest(".swiper-slide") || btn.closest("div");
+    const img = slide.querySelector("img.product-image");
+    if (!img) return;
+
+    const zoomModal = document.getElementById("zoomModal");
+    const zoomedImage = document.getElementById("zoomedImage");
+
+    zoomedImage.src = img.src;
+    zoomModal.classList.remove("hidden");
+    zoomModal.classList.add("flex");
+  });
+});
+
+// Close button
+document.getElementById("zoomClose").addEventListener("click", () => {
+  const zoomModal = document.getElementById("zoomModal");
+  zoomModal.classList.add("hidden");
+  zoomModal.classList.remove("flex");
+});
+
+// Close on background click
+document.getElementById("zoomModal").addEventListener("click", (e) => {
+  if (e.target.id === "zoomModal") {
+    e.currentTarget.classList.add("hidden");
+    e.currentTarget.classList.remove("flex");
+  }
+});

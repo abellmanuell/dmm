@@ -161,6 +161,21 @@
     height: auto;
     width: 100%;
   } */
+
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  #zoomModal img {
+    animation: zoomIn 0.3s ease-out;
+  }
 }
 
 @layer components {
