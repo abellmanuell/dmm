@@ -9,8 +9,8 @@ document.querySelectorAll(".mi-item").forEach((item) => {
     header,
     answer,
     icon,
-    "./assets/images/icons/icon-up-arrow.svg",
-    "./assets/images/icons/icon-greater-than.svg"
+    "./assets/images/icons/icon-down-arrow-2.svg",
+    "./assets/images/icons/icon-up-arrow.svg"
   );
 });
 

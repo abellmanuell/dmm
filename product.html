@@ -686,11 +686,11 @@
 
           <!------------ BREADCRUM SECTION  -->
           <div
-            class="mx-auto max-w-7xl px-4 2xl:px-0 lg:max-w-[1400px] xl:max-w-[1500px]"
+            class="mx-auto max-w-7xl px-4 2xl:px-0 lg:max-w-[1400px] xl:max-w-[1500px] hidden md:block"
           >
             <div class="pt-8 pb-12">
               <section>
-                <ul class="flex items-center gap-2">
+                <ul class="flex items-center gap-2 leading-[21px]">
                   <li>
                     <a
                       class="text-sm leading-[21px] capitalize"
@@ -733,634 +733,665 @@
           <!------------ END BREADCRUM SECTION  -->
 
           <!--------------------------------------- Product Card ----------------------------->
-          <div
-            class="mx-auto max-w-7xl px-4 2xl:px-0 lg:max-w-[1400px] xl:max-w-[1500px] grid gap-8 overflow-clip pb-10 lg:grid-cols-2 lg:items-start"
+          <section
+            class="mx-auto 2xl:px-0 lg:max-w-[1400px] xl:max-w-[1500px] pb-10 grid gap-12 lg:pb-[58.58px] lg:grid-cols-2 lg:items-start"
           >
-            <!-- Product Image -->
-            <div class="grid grid-cols-2 gap-8">
-              <div class="col-span-2">
-                <section>
-                  <div class="relative h-[358px] p-4 lg:h-[640px]">
-                    <img
-                      class="absolute top-0 left-0 size-full object-cover h-[358px] rounded-2xl lg:h-[640px]"
-                      src="./assets/images/products/Game-10-Mega-Bundle.webp"
-                    />
-                    <article class="flex flex-col justify-between">
-                      <section class="space-y-[30px]">
-                        <div class="relative flex justify-between">
-                          <div class="flex flex-col space-y-3 uppercase">
-                            <div
-                              class="inline-flex items-center justify-center self-baseline rounded-full px-2 py-0.5 text-white bg-[#FDA32E]"
-                            >
-                              <p class="text-xs leading-[18px]">Popular</p>
+            <div class="px-4 2xl:px-0 pb-10">
+              <!-- Product Image -->
+              <div class="grid grid-cols-2 gap-8">
+                <div class="col-span-2">
+                  <section>
+                    <div class="relative h-[358px] p-4 lg:h-[640px]">
+                      <img
+                        class="absolute top-0 left-0 size-full object-cover h-[358px] rounded-2xl lg:h-[640px]"
+                        src="./assets/images/products/Game-10-Mega-Bundle.webp"
+                      />
+                      <article class="flex flex-col justify-between">
+                        <section class="space-y-[30px]">
+                          <div class="relative flex justify-between">
+                            <div class="flex flex-col space-y-3 uppercase">
+                              <div
+                                class="inline-flex items-center justify-center self-baseline rounded-full px-2 py-0.5 text-white bg-[#FDA32E]"
+                              >
+                                <p class="text-xs leading-[18px]">Popular</p>
+                              </div>
+                              <div
+                                class="inline-flex items-center justify-center self-baseline rounded-full px-2 py-0.5 text-white bg-[#59C254]"
+                              >
+                                <p class="text-xs leading-[18px]">
+                                  Gift Included
+                                </p>
+                              </div>
                             </div>
-                            <div
-                              class="inline-flex items-center justify-center self-baseline rounded-full px-2 py-0.5 text-white bg-[#59C254]"
-                            >
-                              <p class="text-xs leading-[18px]">
-                                Gift Included
-                              </p>
-                            </div>
+                            <section class="flex flex-col items-end space-y-1">
+                              <div
+                                class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                              >
+                                <img
+                                  alt="Realistic Materials"
+                                  class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                                  src="./assets/images/icons/icon-folders-white.svg"
+                                />
+                                <h3
+                                  class="font-bebas-neue text-sm text-white md:text-lg"
+                                >
+                                  Realistic Materials
+                                </h3>
+                              </div>
+                              <div
+                                class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                              >
+                                <img
+                                  alt="Free worldwide shipping"
+                                  class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                                  src="./assets/images/icons/icon-shipping-white.svg"
+                                />
+                                <h3
+                                  class="font-bebas-neue text-sm text-white md:text-lg"
+                                >
+                                  Free worldwide shipping
+                                </h3>
+                              </div>
+                              <div
+                                class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                              >
+                                <img
+                                  alt="Perfect for 1-8 People"
+                                  class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                                  src="./assets/images/icons/icon-users-white.svg"
+                                />
+                                <h3
+                                  class="font-bebas-neue text-sm text-white md:text-lg"
+                                >
+                                  Perfect for 1-8 People
+                                </h3>
+                              </div>
+                              <div
+                                class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                              >
+                                <img
+                                  alt="Gift-Ready"
+                                  class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                                  src="./assets/images/icons/icon-gift-white.svg"
+                                />
+                                <h3
+                                  class="font-bebas-neue text-sm text-white md:text-lg"
+                                >
+                                  Gift-Ready
+                                </h3>
+                              </div>
+                            </section>
                           </div>
-                          <section class="flex flex-col items-end space-y-2">
-                            <div
-                              class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[6px]"
-                            >
-                              <img
-                                alt="Realistic Materials"
-                                class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
-                                src="./assets/images/icons/icon-folders-white.svg"
-                              />
-                              <h3
-                                class="font-bebas-neue text-sm text-white md:text-lg"
-                              >
-                                Realistic Materials
-                              </h3>
-                            </div>
-                            <div
-                              class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[6px]"
-                            >
-                              <img
-                                alt="Free worldwide shipping"
-                                class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
-                                src="./assets/images/icons/icon-shipping-white.svg"
-                              />
-                              <h3
-                                class="font-bebas-neue text-sm text-white md:text-lg"
-                              >
-                                Free worldwide shipping
-                              </h3>
-                            </div>
-                            <div
-                              class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[6px]"
-                            >
-                              <img
-                                alt="Perfect for 1-8 People"
-                                class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
-                                src="./assets/images/icons/icon-users-white.svg"
-                              />
-                              <h3
-                                class="font-bebas-neue text-sm text-white md:text-lg"
-                              >
-                                Perfect for 1-8 People
-                              </h3>
-                            </div>
-                            <div
-                              class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[6px]"
-                            >
-                              <img
-                                alt="Gift-Ready"
-                                class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
-                                src="./assets/images/icons/icon-gift-white.svg"
-                              />
-                              <h3
-                                class="font-bebas-neue text-sm text-white md:text-lg"
-                              >
-                                Gift-Ready
-                              </h3>
-                            </div>
-                          </section>
-                        </div>
-                      </section>
+                        </section>
 
-                      <!------ Zoom In Icon -->
-                      <div class="absolute right-4 bottom-4">
-                        <img
-                          class="h-[24px] max-w-[24px]"
-                          src="./assets/images/icons/zoom-in.svg"
-                        />
-                      </div>
-                    </article>
-                  </div>
-                </section>
-              </div>
-              <div class="col-span-1">
-                <section>
-                  <div class="relative h-[358px] p-4">
-                    <img
-                      class="absolute top-0 left-0 size-full object-cover h-[358px] rounded-2xl"
-                      src="./assets/images/products/product-3.webp"
-                    />
-                    <article class="flex flex-col justify-between">
-                      <section class="space-y-[30px]">
-                        <div class="relative flex justify-between">
-                          <div class="flex flex-col space-y-3 uppercase"></div>
-                          <section
-                            class="flex flex-col items-end space-y-2"
-                          ></section>
+                        <!------ Zoom In Icon -->
+                        <div class="absolute right-4 bottom-4">
+                          <img
+                            class="h-[24px] max-w-[24px]"
+                            src="./assets/images/icons/zoom-in.svg"
+                          />
                         </div>
-                      </section>
-                    </article>
-                  </div>
-                </section>
+                      </article>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-span-1">
+                  <section>
+                    <div class="relative h-[358px] p-4">
+                      <img
+                        class="absolute top-0 left-0 size-full object-cover h-[358px] rounded-2xl"
+                        src="./assets/images/products/product-3.webp"
+                      />
+                      <article class="flex flex-col justify-between">
+                        <section class="space-y-[30px]">
+                          <div class="relative flex justify-between">
+                            <div
+                              class="flex flex-col space-y-3 uppercase"
+                            ></div>
+                            <section
+                              class="flex flex-col items-end space-y-2"
+                            ></section>
+                          </div>
+                        </section>
+                      </article>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-span-1">
+                  <section>
+                    <div class="relative h-[358px] p-4">
+                      <img
+                        class="absolute top-0 left-0 size-full object-cover h-[358px] rounded-2xl"
+                        src="./assets/images/products/product-2.webp"
+                      />
+                      <article class="flex flex-col justify-between">
+                        <section class="space-y-[30px]">
+                          <div class="relative flex justify-between">
+                            <div
+                              class="flex flex-col space-y-3 uppercase"
+                            ></div>
+                            <section
+                              class="flex flex-col items-end space-y-2"
+                            ></section>
+                          </div>
+                        </section>
+                      </article>
+                    </div>
+                  </section>
+                </div>
+                <div class="col-span-2">
+                  <section>
+                    <div class="relative h-[358px] p-4 lg:h-[640px]">
+                      <img
+                        class="absolute top-0 left-0 size-full object-cover h-[358px] rounded-2xl lg:h-[640px]"
+                        src="./assets/images/products/product-4.webp"
+                      />
+                      <article class="flex flex-col justify-between">
+                        <section class="space-y-[30px]">
+                          <div class="relative flex justify-between">
+                            <div
+                              class="flex flex-col space-y-3 uppercase"
+                            ></div>
+                            <section
+                              class="flex flex-col items-end space-y-2"
+                            ></section>
+                          </div>
+                        </section>
+                      </article>
+                    </div>
+                  </section>
+                </div>
               </div>
-              <div class="col-span-1">
-                <section>
-                  <div class="relative h-[358px] p-4">
-                    <img
-                      class="absolute top-0 left-0 size-full object-cover h-[358px] rounded-2xl"
-                      src="./assets/images/products/product-2.webp"
-                    />
-                    <article class="flex flex-col justify-between">
-                      <section class="space-y-[30px]">
-                        <div class="relative flex justify-between">
-                          <div class="flex flex-col space-y-3 uppercase"></div>
-                          <section
-                            class="flex flex-col items-end space-y-2"
-                          ></section>
-                        </div>
-                      </section>
-                    </article>
-                  </div>
-                </section>
-              </div>
-              <div class="col-span-2">
-                <section>
-                  <div class="relative h-[358px] p-4 lg:h-[640px]">
-                    <img
-                      class="absolute top-0 left-0 size-full object-cover h-[358px] rounded-2xl lg:h-[640px]"
-                      src="./assets/images/products/product-4.webp"
-                    />
-                    <article class="flex flex-col justify-between">
-                      <section class="space-y-[30px]">
-                        <div class="relative flex justify-between">
-                          <div class="flex flex-col space-y-3 uppercase"></div>
-                          <section
-                            class="flex flex-col items-end space-y-2"
-                          ></section>
-                        </div>
-                      </section>
-                    </article>
-                  </div>
-                </section>
-              </div>
+              <!-- Product Image -->
             </div>
-            <!-- Product Image -->
 
-            <!-- Product Details -->
-            <div class="grid gap-y-8">
-              <section class="bg-tequila-500 rounded-2xl p-4 md:p-6">
-                <div class="xxs:flex-row xxs:items-center flex flex-col gap-2">
-                  <div class="text-pumpkin-500 flex space-x-[3.24px]">
-                    <img
-                      alt="Star Icon"
-                      class="max-h-[20px] max-w-[20px]"
-                      src="./assets/images/icons/icon-star.svg"
-                    /><img
-                      alt="Star Icon"
-                      class="max-h-[20px] max-w-[20px]"
-                      src="./assets/images/icons/icon-star.svg"
-                    /><img
-                      alt="Star Icon"
-                      class="max-h-[20px] max-w-[20px]"
-                      src="./assets/images/icons/icon-star.svg"
-                    /><img
-                      alt="Star Icon"
-                      class="max-h-[20px] max-w-[20px]"
-                      src="./assets/images/icons/icon-star.svg"
-                    /><img
-                      alt="Star Icon"
-                      class="max-h-[20px] max-w-[20px]"
-                      src="./assets/images/icons/icon-star.svg"
-                    />
-                  </div>
-                  <p
-                    class="text-left text-lg leading-[24px] font-semibold text-black"
-                  >
-                    1024 reviews
-                  </p>
-                </div>
-                <h3
-                  class="font-bebas-neue py-4 text-[32px] !leading-[38.4px] md:py-6 lg:text-5xl lg:!leading-[57.6px]"
-                >
-                  10-Game Detective Mega Bundle
-                </h3>
-                <section
-                  class="xxxs:flex-row xxxs:items-center flex flex-col gap-4"
-                >
-                  <div class="relative h-[81px] max-w-[81px]">
-                    <img
-                      class="h-[81px] w-[81px] rounded-full object-cover"
-                      alt="See How It Work Image"
-                      src="./assets/images/hero-aside-video-poster.webp"
-                    /><button
-                      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full p-4 cursor-pointer hover:bg-white/20 bg-white/0"
-                    >
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                        class="text-pumpkin-500 size-8"
-                        height="1em"
-                        width="1em"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
-                          clip-rule="evenodd"
-                        ></path>
-                      </svg>
-                    </button>
-                  </div>
-                  <h3
-                    class="font-bebas-neue text-[21.64px] !leading-[25.968px]"
-                  >
-                    See How It Works
-                  </h3>
-                </section>
-                <div class="flex flex-wrap gap-6 py-4 md:py-6">
-                  <div class="font-bebas-neue flex space-x-2">
-                    <p class="text-red-orange-500 text-2xl lg:text-[32px]">
-                      €325
-                    </p>
-                    <p class="text-[#868686] lg:text-xl"><del>€650</del></p>
-                  </div>
+            <div
+              class="bg-tequila-500 rounded-2xl p-4 md:p-6 mx-auto max-w-7xl lg:max-w-[1400px] xl:max-w-[1500px]"
+            >
+              <!-- Product Details -->
+              <div class="grid gap-y-8">
+                <section>
                   <div
-                    class="bg-red-orange-500 flex items-center justify-center rounded-full self-start px-2 py-0.5 text-white"
+                    class="xxs:flex-row xxs:items-center flex flex-col gap-2"
                   >
-                    <p class="font-bold">Save 50%</p>
-                  </div>
-                </div>
-                <div class="flex items-center space-x-2">
-                  <div
-                    class="bg-red-orange-500 h-2.5 w-2.5 rounded-full ring-2 ring-red-500/50"
-                  ></div>
-                  <p class="!leading-[24px] font-bold">8 units in stock</p>
-                </div>
-                <p class="py-4 !leading-[24px] md:py-6">
-                  Short product description about product. Other content, short
-                  product description about product. Short product description
-                  about product. Other content.
-                </p>
-                <hr class="text-[#F3D4B5]" />
-                <section class="flex flex-wrap gap-2.5 py-4 md:py-8">
-                  <div
-                    class="bg-dark-burgundy-500 xxxs:flex-row inline-flex w-fit flex-col items-center gap-3 rounded-full px-3 py-2"
-                  >
-                    <img
-                      alt="Shipping Icon White"
-                      width="24"
-                      height="24"
-                      src="./assets/images/icons/icon-shipping-white.svg"
-                    />
-                    <p class="leading-6 text-white">Free worldwide shipping</p>
-                  </div>
-                  <div
-                    class="bg-dark-burgundy-500 xxxs:flex-row inline-flex w-fit flex-col items-center gap-3 rounded-full px-3 py-2"
-                  >
-                    <img
-                      alt="Folder Icon White"
-                      width="24"
-                      height="24"
-                      src="./assets/images/icons/icon-folders-white.svg"
-                    />
-                    <p class="leading-6 text-white">10 games included</p>
-                  </div>
-                  <div
-                    class="bg-dark-burgundy-500 xxxs:flex-row inline-flex w-fit flex-col items-center gap-3 rounded-full px-3 py-2"
-                  >
-                    <img
-                      alt="Clock Icon White"
-                      width="24"
-                      height="24"
-                      src="./assets/images/icons/icon-clock-white.svg"
-                    />
-                    <p class="leading-6 text-white">20 playable hours</p>
-                  </div>
-                </section>
-                <section
-                  class="bg-dark-burgundy-500 my-4 p-4 md:my-8 flex flex-col md:flex-row md:items-center rounded-[8px] text-white md:space-x-8"
-                >
-                  <div>
-                    <h3 class="font-bebas-neue text-base">Jene</h3>
-                    <div
-                      class="text-pumpkin-500 flex space-x-[3.24px] pt-4 pb-8"
-                    >
+                    <div class="text-pumpkin-500 flex space-x-1">
                       <img
                         alt="Star Icon"
-                        class="max-h-[20px] max-w-[20px]"
+                        class="h-[20px] w-[20px]"
                         src="./assets/images/icons/icon-star.svg"
                       /><img
                         alt="Star Icon"
-                        class="max-h-[20px] max-w-[20px]"
+                        class="h-[20px] w-[20px]"
                         src="./assets/images/icons/icon-star.svg"
                       /><img
                         alt="Star Icon"
-                        class="max-h-[20px] max-w-[20px]"
+                        class="h-[20px] w-[20px]"
                         src="./assets/images/icons/icon-star.svg"
                       /><img
                         alt="Star Icon"
-                        class="max-h-[20px] max-w-[20px]"
+                        class="h-[20px] w-[20px]"
                         src="./assets/images/icons/icon-star.svg"
                       /><img
                         alt="Star Icon"
-                        class="max-h-[20px] max-w-[20px]"
+                        class="h-[20px] w-[20px]"
                         src="./assets/images/icons/icon-star.svg"
                       />
                     </div>
-                  </div>
-                  <p class="text-sm !leading-[19.6px]">
-                    Wow, Detective Mystery Masters completely saved my weekly
-                    friends gathering. It was the best decision to play the game
-                    with everyone.
-                  </p>
-                </section>
-                <hr class="text-[#F3D4B5]" />
-                <section
-                  class="my-4 flex h-[213px] items-center justify-center rounded-[8px] bg-[#F1D8C0] p-4 md:my-8"
-                >
-                  <h3 class="font-bebas-neue text-2xl">KACHING BUNDLES</h3>
-                </section>
-
-                <hr class="text-[#F3D4B5]" />
-                <!------------ CHECKOUT BUTTONS -->
-                <section class="flex flex-col gap-4 pt-4 md:pt-8 lg:gap-8">
-                  <div class="flex flex-col gap-4">
-                    <button
-                      class="outline-1 xxxs:flex-row flex flex-col items-center justify-center space-x-4 cursor-pointer rounded-full px-7 py-4 font-bold duration-150 ease-in"
+                    <p
+                      class="text-left text-lg leading-[24px] font-medium text-black"
                     >
-                      <span>Add bundle to cart</span
-                      ><svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 512 512"
-                        class="text-pumpkin-500"
-                        height="4"
-                        width="4"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
-                        ></path></svg
-                      ><span>€325.00</span>
-                    </button>
-                    <div>
-                      <a
-                        href="http://localhost:5173/#"
-                        class="bg-pumpkin-500 hover:bg-pumpkin-400 xxxs:flex-row flex items-center space-x-4 xxs:px-7 rounded-full p-4 font-bold xxs:w-auto w-full duration-150 ease-in justify-center capitalize"
-                        ><span class="xxxs:inline hidden">Checkout now</span
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="17"
-                          height="17"
-                          viewBox="0 0 17 17"
-                          fill="none"
-                        >
-                          <g clip-path="url(#clip0_161_7335)">
-                            <g clip-path="url(#clip1_161_7335)">
-                              <g clip-path="url(#clip2_161_7335)">
-                                <path
-                                  fill-rule="evenodd"
-                                  clip-rule="evenodd"
-                                  d="M10.5363 1.94238C10.5363 5.4811 13.2311 8.27833 16.4753 8.29248H16.5V9.79248V9.79419C13.2448 9.79419 10.5363 12.5967 10.5363 16.1444H9.03627C9.03627 13.5501 10.2405 11.2264 12.1109 9.79248H0.5V8.29248H12.1086C10.2395 6.85843 9.03627 4.53553 9.03627 1.94238H10.5363Z"
-                                  fill="black"
-                                ></path>
-                              </g>
-                            </g>
-                          </g>
-                          <defs>
-                            <clippath id="clip0_161_7335">
-                              <rect
-                                width="16"
-                                height="16"
-                                fill="white"
-                                transform="translate(0.5 0.942383)"
-                              ></rect>
-                            </clippath>
-                            <clippath id="clip1_161_7335">
-                              <rect
-                                width="16"
-                                height="16"
-                                fill="white"
-                                transform="translate(0.5 0.942383)"
-                              ></rect>
-                            </clippath>
-                            <clippath id="clip2_161_7335">
-                              <rect
-                                width="16"
-                                height="16"
-                                fill="white"
-                                transform="translate(0.5 0.942383)"
-                              ></rect>
-                            </clippath>
-                          </defs></svg
-                      ></a>
-                    </div>
+                      1024 reviews
+                    </p>
                   </div>
-
-                  <!-------------------- Payment GateWay Logo -->
-                  <div
-                    class="grid grid-cols-5 place-items-center gap-[21.4px] px-[8.7px] md:grid-cols-10 md:gap-[7.6px]"
+                  <h3
+                    class="font-bebas-neue py-4 text-[32px] !leading-[38.4px] md:py-6 lg:text-5xl lg:!leading-[57.6px]"
                   >
-                    <a
-                      href="/"
-                      class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
-                      ><img
-                        alt="Visa"
-                        src="./assets/images/payments-gateway-logo/visa-logo.svg"
-                      />
-                    </a>
-                    <a
-                      href="/"
-                      class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
-                      ><img
-                        alt="Dinners Club"
-                        src="./assets/images/payments-gateway-logo/diners-club-logo.svg"
-                      />
-                    </a>
-                    <a
-                      href="/"
-                      class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
-                      ><img
-                        alt="Apple Pay"
-                        src="./assets/images/payments-gateway-logo/apple-pay-logo.svg"
-                      />
-                    </a>
-                    <a
-                      href="/"
-                      class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
-                      ><img
-                        alt="Google Pay"
-                        src="./assets/images/payments-gateway-logo/google-pay-logo.svg" /></a
-                    ><a
-                      href="/"
-                      class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
-                      ><img
-                        alt="Maestro"
-                        src="./assets/images/payments-gateway-logo/maestro-logo.svg" /></a
-                    ><a
-                      href="/"
-                      class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
-                      ><img
-                        alt="Mastercard"
-                        src="./assets/images/payments-gateway-logo/mastercard-logo.svg" /></a
-                    ><a
-                      href="/"
-                      class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
-                      ><img
-                        alt="PayPal"
-                        src="./assets/images/payments-gateway-logo/paypal-logo.svg" /></a
-                    ><a
-                      href="/"
-                      class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
-                      ><img
-                        alt="Payment Types Logo"
-                        src="./assets/images/payments-gateway-logo/payment-types-logos.svg" /></a
-                    ><a
-                      href="/"
-                      class="flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
-                      ><img
-                        alt="Amex"
-                        src="./assets/images/payments-gateway-logo/amex-logo.svg" /></a
-                    ><a
-                      href="/"
-                      class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
-                      ><img
-                        alt="Stripe"
-                        src="./assets/images/payments-gateway-logo/stripe-logo.svg"
-                    /></a>
-                  </div>
-                  <!-------------------- End Payment GateWay Logo -->
-
-                  <section class="space-y-4">
-                    <ul
-                      class="border-pumpkin-500 bg-pumpkin-200 grid grid-cols-3 place-items-center gap-4 rounded-2xl border-2 p-4"
+                    10-Game Detective Mega Bundle
+                  </h3>
+                  <section
+                    class="xxxs:flex-row xxxs:items-center flex flex-col gap-4"
+                  >
+                    <div class="relative h-[81px] max-w-[81px]">
+                      <img
+                        class="h-[81px] w-[81px] rounded-full object-cover"
+                        alt="See How It Work Image"
+                        src="./assets/images/hero-aside-video-poster.webp"
+                      /><button
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full p-4 cursor-pointer hover:bg-white/20 bg-white/0"
+                      >
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                          class="text-pumpkin-500 size-[21.94px]"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+                            clip-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <h3
+                      class="font-bebas-neue text-[21.64px] !leading-[25.968px] -tracking-[0.59px]"
                     >
-                      <li class="flex flex-col gap-1">
-                        <div class="flex gap-1">
-                          <img
-                            alt="Truck Icon"
-                            class="h-[16px] max-w-[16px]"
-                            src="./assets/images/icons/icon-truck-black.svg"
-                          />
-                          <p class="text-xs">Order within</p>
-                        </div>
-                        <h3
-                          class="font-bebas-neue text-2xl tracking-[2%] md:text-[32px]"
-                        >
-                          00:24:54
-                        </h3>
-                      </li>
-                      <li>
-                        <img
-                          alt="Forward Arrow Orange Icon"
-                          class="h-[47.41px] w-[56.06px] md:h-[61.35px] md:w-[72.54px]"
-                          src="./assets/images/icons/icon-forward-arrow-orange.svg"
-                        />
-                      </li>
-                      <li class="flex flex-col gap-1">
-                        <div class="flex gap-1">
-                          <img
-                            alt="Package Icon Black"
-                            class="h-[16px] max-w-[16px]"
-                            src="./assets/images/icons/icon-package-black.svg"
-                          />
-                          <p class="text-xs">Receive Order</p>
-                        </div>
-                        <h3
-                          class="font-bebas-neue text-2xl tracking-[2%] md:text-[32px]"
-                        >
-                          00:24:54
-                        </h3>
-                      </li>
-                    </ul>
+                      See How It Works
+                    </h3>
+                  </section>
+                  <div class="flex flex-wrap gap-6 py-4 md:py-6">
+                    <div class="font-bebas-neue flex space-x-2">
+                      <p class="text-red-orange-500 text-[32px]">€325</p>
+                      <p class="text-[#868686] text-xl"><del>€650</del></p>
+                    </div>
                     <div
-                      class="flex h-[50px] items-center justify-between gap-[52px] md:flex-row"
+                      class="bg-red-orange-500 flex items-center justify-center rounded-full self-start px-2 py-0.5 text-white"
                     >
-                      <p class="text-xs font-bold">
-                        Shipments are taken care and delivered in 1-4 business
-                        days by:
+                      <p class="font-medium">Save 50%</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center space-x-[5px]">
+                    <div
+                      class="bg-red-orange-500 h-4 w-4 rounded-full ring-offset-3 ring-offset-[#FFA5A0] ring-2 ring-[#FFCAC7]"
+                    ></div>
+                    <p class="!leading-[24px] font-bold">8 units in stock</p>
+                  </div>
+                  <p class="py-4 !leading-[24px] md:py-6">
+                    Short product description about product. Other content,
+                    short product description about product. Short product
+                    description about product. Other content.
+                  </p>
+                  <hr class="text-[#F3D4B5] h-[2px]" />
+                  <section class="flex flex-wrap gap-2.5 py-4 md:py-8">
+                    <div
+                      class="bg-dark-burgundy-500 xxxs:flex-row inline-flex w-fit flex-col items-center gap-3 rounded-full px-3 py-2"
+                    >
+                      <img
+                        alt="Shipping Icon White"
+                        width="24"
+                        height="24"
+                        src="./assets/images/icons/icon-shipping-white.svg"
+                      />
+                      <p class="leading-6 text-white">
+                        Free worldwide shipping
                       </p>
+                    </div>
+                    <div
+                      class="bg-dark-burgundy-500 xxxs:flex-row inline-flex w-fit flex-col items-center gap-3 rounded-full px-3 py-2"
+                    >
+                      <img
+                        alt="Folder Icon White"
+                        width="24"
+                        height="24"
+                        src="./assets/images/icons/icon-folders-white.svg"
+                      />
+                      <p class="leading-6 text-white">10 games included</p>
+                    </div>
+                    <div
+                      class="bg-dark-burgundy-500 xxxs:flex-row inline-flex w-fit flex-col items-center gap-3 rounded-full px-3 py-2"
+                    >
+                      <img
+                        alt="Clock Icon White"
+                        width="24"
+                        height="24"
+                        src="./assets/images/icons/icon-clock-white.svg"
+                      />
+                      <p class="leading-6 text-white">20 playable hours</p>
+                    </div>
+                  </section>
+                  <section
+                    class="bg-dark-burgundy-500 mb-4 p-4 md:mb-8 md:my-0 flex flex-col md:flex-row md:items-start rounded-[8px] text-white md:space-x-8"
+                  >
+                    <div class="flex-shrink-0 overflow-clip">
+                      <h3
+                        class="font-bebas-neue text-base leading-4 tracking-[2%]"
+                      >
+                        Jene
+                      </h3>
                       <div
-                        class="flex flex-col justify-between gap-4 md:flex-row"
+                        class="text-pumpkin-500 flex space-x-[3.24px] pt-4 pb-8 md:pb-1"
                       >
                         <img
-                          alt="Fed Ex"
-                          class="h-[18px] max-w-[57px] md:h-[23.23px]"
-                          src="./assets/images/payments-gateway-logo/fedex-logo.svg"
-                        /><img
-                          alt="DHL"
-                          class="h-[16px] max-w-[70px] md:h-[20.55px]"
-                          src="./assets/images/payments-gateway-logo/dhl-logo.svg"
+                          alt="Star Icon"
+                          class="h-[20px] w-[20px]"
+                          src="./assets/images/icons/icon-star.svg"
+                        />
+                        <img
+                          alt="Star Icon"
+                          class="h-[20px] w-[20px]"
+                          src="./assets/images/icons/icon-star.svg"
+                        />
+                        <img
+                          alt="Star Icon"
+                          class="h-[20px] w-[20px]"
+                          src="./assets/images/icons/icon-star.svg"
+                        />
+                        <img
+                          alt="Star Icon"
+                          class="h-[20px] w-[20px]"
+                          src="./assets/images/icons/icon-star.svg"
+                        />
+                        <img
+                          alt="Star Icon"
+                          class="h-[20px] w-[20px]"
+                          src="./assets/images/icons/icon-star.svg"
                         />
                       </div>
+                    </div>
+
+                    <p class="text-sm !leading-[19.6px] flex-grow self-center">
+                      Wow, Detective Mystery Masters completely saved my weekly
+                      friends gathering. It was the best decision to play the
+                      game with everyone.
+                    </p>
+                  </section>
+                  <hr class="text-[#F3D4B5]" />
+                  <section
+                    class="my-4 flex h-[213px] items-center justify-center rounded-[8px] bg-[#F1D8C0] p-4 md:my-8"
+                  >
+                    <h3 class="font-bebas-neue text-2xl">KACHING BUNDLES</h3>
+                  </section>
+
+                  <hr class="text-[#F3D4B5]" />
+                  <!------------ CHECKOUT BUTTONS -->
+                  <section class="flex flex-col gap-4 pt-4 md:pt-8 lg:gap-8">
+                    <div class="flex flex-col gap-4">
+                      <button
+                        class="outline-1 xxxs:flex-row flex flex-col items-center justify-center space-x-4 cursor-pointer rounded-full xxxs:px-7 xxs:py-4 font-bold duration-150 ease-in"
+                      >
+                        <span>Add bundle to cart</span
+                        ><svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          class="text-pumpkin-500"
+                          height="4"
+                          width="4"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                          ></path></svg
+                        ><span>€325.00</span>
+                      </button>
+                      <div>
+                        <a
+                          href="http://localhost:5173/#"
+                          class="bg-pumpkin-500 hover:bg-pumpkin-400 xxxs:flex-row flex items-center space-x-4 xxs:px-7 rounded-full p-4 font-bold xxs:w-auto w-full duration-150 ease-in justify-center capitalize"
+                          ><span class="xxxs:inline hidden">Checkout now</span
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="17"
+                            height="17"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                          >
+                            <g clip-path="url(#clip0_161_7335)">
+                              <g clip-path="url(#clip1_161_7335)">
+                                <g clip-path="url(#clip2_161_7335)">
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M10.5363 1.94238C10.5363 5.4811 13.2311 8.27833 16.4753 8.29248H16.5V9.79248V9.79419C13.2448 9.79419 10.5363 12.5967 10.5363 16.1444H9.03627C9.03627 13.5501 10.2405 11.2264 12.1109 9.79248H0.5V8.29248H12.1086C10.2395 6.85843 9.03627 4.53553 9.03627 1.94238H10.5363Z"
+                                    fill="black"
+                                  ></path>
+                                </g>
+                              </g>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_161_7335">
+                                <rect
+                                  width="16"
+                                  height="16"
+                                  fill="white"
+                                  transform="translate(0.5 0.942383)"
+                                ></rect>
+                              </clippath>
+                              <clippath id="clip1_161_7335">
+                                <rect
+                                  width="16"
+                                  height="16"
+                                  fill="white"
+                                  transform="translate(0.5 0.942383)"
+                                ></rect>
+                              </clippath>
+                              <clippath id="clip2_161_7335">
+                                <rect
+                                  width="16"
+                                  height="16"
+                                  fill="white"
+                                  transform="translate(0.5 0.942383)"
+                                ></rect>
+                              </clippath>
+                            </defs></svg
+                        ></a>
+                      </div>
+
+                      <!-------------------- Payment GateWay Logo -->
+                      <div
+                        class="grid grid-cols-2 xxxs:grid-cols-5 place-items-center gap-[21.4px] md:grid-cols-10 md:gap-[7.6px]"
+                      >
+                        <a
+                          href="/"
+                          class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
+                          ><img
+                            alt="Visa"
+                            src="./assets/images/payments-gateway-logo/visa-logo.svg"
+                          />
+                        </a>
+                        <a
+                          href="/"
+                          class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
+                          ><img
+                            alt="Dinners Club"
+                            src="./assets/images/payments-gateway-logo/diners-club-logo.svg"
+                          />
+                        </a>
+                        <a
+                          href="/"
+                          class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
+                          ><img
+                            alt="Apple Pay"
+                            src="./assets/images/payments-gateway-logo/apple-pay-logo.svg"
+                          />
+                        </a>
+                        <a
+                          href="/"
+                          class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
+                          ><img
+                            alt="Google Pay"
+                            src="./assets/images/payments-gateway-logo/google-pay-logo.svg" /></a
+                        ><a
+                          href="/"
+                          class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
+                          ><img
+                            alt="Maestro"
+                            src="./assets/images/payments-gateway-logo/maestro-logo.svg" /></a
+                        ><a
+                          href="/"
+                          class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
+                          ><img
+                            alt="Mastercard"
+                            src="./assets/images/payments-gateway-logo/mastercard-logo.svg" /></a
+                        ><a
+                          href="/"
+                          class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
+                          ><img
+                            alt="PayPal"
+                            src="./assets/images/payments-gateway-logo/paypal-logo.svg" /></a
+                        ><a
+                          href="/"
+                          class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
+                          ><img
+                            alt="Payment Types Logo"
+                            src="./assets/images/payments-gateway-logo/payment-types-logos.svg" /></a
+                        ><a
+                          href="/"
+                          class="flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
+                          ><img
+                            alt="Amex"
+                            src="./assets/images/payments-gateway-logo/amex-logo.svg" /></a
+                        ><a
+                          href="/"
+                          class="border-pumpkin-500 border flex h-[31.5px] w-[43px] items-center justify-center rounded-sm"
+                          ><img
+                            alt="Stripe"
+                            src="./assets/images/payments-gateway-logo/stripe-logo.svg"
+                        /></a>
+                      </div>
+                      <!-------------------- End Payment GateWay Logo -->
+                    </div>
+
+                    <section class="space-y-4">
+                      <ul
+                        class="border-pumpkin-500 bg-pumpkin-200 flex flex-col xxs:grid grid-cols-[auto_57px_auto] justify-items-center gap-10 rounded-2xl border-2 p-4"
+                      >
+                        <li class="flex flex-col gap-1 justify-self-end">
+                          <div class="flex gap-1">
+                            <img
+                              alt="Truck Icon"
+                              class="h-[16px] max-w-[16px]"
+                              src="./assets/images/icons/icon-truck-black.svg"
+                            />
+                            <p class="text-xs">Order within</p>
+                          </div>
+                          <h3
+                            class="font-bebas-neue text-2xl tracking-[2%] md:text-[32px]"
+                          >
+                            00:24:54
+                          </h3>
+                        </li>
+                        <li class="self-center">
+                          <img
+                            alt="Forward Arrow Orange Icon"
+                            class=""
+                            src="./assets/images/icons/icon-forward-arrow-orange.svg"
+                          />
+                        </li>
+                        <li class="flex flex-col gap-1 justify-self-start">
+                          <div class="flex gap-1">
+                            <img
+                              alt="Package Icon Black"
+                              class="h-[16px] max-w-[16px]"
+                              src="./assets/images/icons/icon-package-black.svg"
+                            />
+                            <p class="text-xs">Receive Order</p>
+                          </div>
+                          <h3
+                            class="font-bebas-neue text-2xl tracking-[2%] md:text-[32px]"
+                          >
+                            00:24:54
+                          </h3>
+                        </li>
+                      </ul>
+                      <div
+                        class="flex flex-col xs:h-[50px] items-center justify-between gap-[52px] xxs:flex-row"
+                      >
+                        <p class="text-xs font-bold sm:w-[250px]">
+                          Shipments are taken care and delivered in 1-4 business
+                          days by:
+                        </p>
+                        <div
+                          class="flex flex-col justify-between gap-4 md:flex-row"
+                        >
+                          <img
+                            alt="Fed Ex"
+                            class="h-[18px] max-w-[57px] md:h-[23.23px]"
+                            src="./assets/images/payments-gateway-logo/fedex-logo.svg"
+                          /><img
+                            alt="DHL"
+                            class="h-[16px] max-w-[70px] md:h-[20.55px]"
+                            src="./assets/images/payments-gateway-logo/dhl-logo.svg"
+                          />
+                        </div>
+                      </div>
+                    </section>
+                  </section>
+                  <!------------ END CHECKOUT BUTTONS -->
+                </section>
+
+                <!----------------- MORE INFORMATION -->
+                <section class="bg-tequila-500 rounded-2xl xxs:p-6">
+                  <section class="grid gap-4">
+                    <div class="mi-item">
+                      <div
+                        class="xxxs:flex cursor-pointer items-center justify-between mi-header"
+                      >
+                        <h3 class="font-bebas-neue text-xl leading-7">
+                          Bundle includes
+                        </h3>
+                        <span
+                          ><img
+                            class="h-6 w-6 mi-icon"
+                            src="./assets/images/icons/icon-down-arrow-2.svg"
+                        /></span>
+                      </div>
+                      <p
+                        class="leading-6 text-[#444444] mi-answer py-4"
+                        style="display: none"
+                      >
+                        <span class="block space-y-5"
+                          ><span class="block !leading-[24px]"
+                            >🧩 12 Captivating Puzzles offering hours of
+                            thrilling gameplay.</span
+                          ><span class="block !leading-[24px]"
+                            >⏱️ 2-4 Hours of Immersive Fun for solo or group
+                            enjoyment.</span
+                          ><span class="block !leading-[24px]"
+                            >👥 Play Solo or with Friends (1-8 players) for the
+                            ultimate adventure.</span
+                          ><span class="block !leading-[24px]"
+                            >🖨️ Print &amp; Play - Easy setup for all chapters
+                            at once.</span
+                          ><span class="block !leading-[24px]"
+                            >💡 Innovative Mirror-Revealed Hints throughout your
+                            journey.</span
+                          ></span
+                        >
+                      </p>
+                    </div>
+
+                    <hr class="text-[#F3D4B5]" />
+
+                    <div class="mi-item">
+                      <div
+                        class="xxxs:flex cursor-pointer items-center justify-between mi-header"
+                      >
+                        <h3 class="font-bebas-neue text-xl leading-7">
+                          Other Information
+                        </h3>
+                        <span
+                          ><img
+                            class="h-6 w-6 mi-icon"
+                            src="./assets/images/icons/icon-down-arrow-2.svg"
+                        /></span>
+                      </div>
+
+                      <p
+                        class="mi-answer leading-6 text-[#444444] py-4"
+                        style="display: none"
+                      >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.
+                        Duis cursus, mi quis viverra ornare, eros dolor interdum
+                        nulla, ut commodo diam libero vitae erat. Aenean
+                        faucibus nibh et justo cursus id rutrum lorem imperdiet.
+                        Nunc ut sem vitae risus tristique posuere.
+                      </p>
                     </div>
                   </section>
                 </section>
-                <!------------ END CHECKOUT BUTTONS -->
-              </section>
-
-              <!----------------- MORE INFORMATION -->
-              <section class="bg-tequila-500 rounded-2xl p-6">
-                <section class="grid gap-4">
-                  <div class="mi-item">
-                    <div
-                      class="xxxs:flex cursor-pointer items-center justify-between mi-header"
-                    >
-                      <h3 class="font-bebas-neue text-xl leading-7">
-                        Bundle includes
-                      </h3>
-                      <span
-                        ><img
-                          class="h-6 w-6 mi-icon"
-                          src="./assets/images/icons/icon-up-arrow.svg"
-                      /></span>
-                    </div>
-                    <p class="leading-6 text-[#444444] mi-answer py-2">
-                      <span class="block space-y-5"
-                        ><span class="block !leading-[24px]"
-                          >🧩 12 Captivating Puzzles offering hours of thrilling
-                          gameplay.</span
-                        ><span class="block !leading-[24px]"
-                          >⏱️ 2-4 Hours of Immersive Fun for solo or group
-                          enjoyment.</span
-                        ><span class="block !leading-[24px]"
-                          >👥 Play Solo or with Friends (1-8 players) for the
-                          ultimate adventure.</span
-                        ><span class="block !leading-[24px]"
-                          >🖨️ Print &amp; Play - Easy setup for all chapters at
-                          once.</span
-                        ><span class="block !leading-[24px]"
-                          >💡 Innovative Mirror-Revealed Hints throughout your
-                          journey.</span
-                        ></span
-                      >
-                    </p>
-                  </div>
-
-                  <div class="mi-item">
-                    <div
-                      class="xxxs:flex cursor-pointer items-center justify-between mi-header"
-                    >
-                      <h3 class="font-bebas-neue text-xl leading-7">
-                        Other Information
-                      </h3>
-                      <span
-                        ><img
-                          class="h-6 w-6 mi-icon"
-                          src="./assets/images/icons/icon-up-arrow.svg"
-                      /></span>
-                    </div>
-
-                    <p class="mi-answer leading-6 text-[#444444] py-2">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Suspendisse varius enim in eros elementum tristique. Duis
-                      cursus, mi quis viverra ornare, eros dolor interdum nulla,
-                      ut commodo diam libero vitae erat. Aenean faucibus nibh et
-                      justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae
-                      risus tristique posuere.
-                    </p>
-                  </div>
-                </section>
-              </section>
-              <!----------------- END MORE INFORMATION -->
+                <!----------------- END MORE INFORMATION -->
+              </div>
+              <!-- End Product Details -->
             </div>
-            <!-- End Product Details -->
-          </div>
+          </section>
           <!--------------------------------------- End Product Card ----------------------------->
 
           <!------------ STEPS SECTION ---------------------->
@@ -1556,23 +1587,23 @@
                     <img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     /><img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     /><img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     /><img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     /><img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     />
                   </div>
                   <p class="grow py-6 text-lg leading-[27px]">
@@ -1601,23 +1632,23 @@
                     <img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     /><img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     /><img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     /><img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     /><img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     />
                   </div>
                   <p class="grow py-6 text-lg leading-[27px]">
@@ -1646,23 +1677,23 @@
                     <img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     /><img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     /><img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     /><img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     /><img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     />
                   </div>
                   <p class="grow py-6 text-lg leading-[27px]">
@@ -1691,23 +1722,23 @@
                     <img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     /><img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     /><img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     /><img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     /><img
                       src="./assets/images/icons/icon-star.svg"
                       alt="Star Icon"
-                      class="max-h-[15.11px] max-w-[16px]"
+                      class="h-[15.11px] w-[16px]"
                     />
                   </div>
                   <p class="grow py-6 text-lg leading-[27px]">
@@ -2477,7 +2508,9 @@
           <div
             class="relative z-5 mx-auto max-w-7xl px-4 py-20 lg:max-w-[1400px] xl:max-w-[1500px] 2xl:px-0"
           >
-            <div class="flex items-end justify-between">
+            <div
+              class="flex items-end justify-between overflow-clip sm:overflow-visible"
+            >
               <h2
                 class="font-bebas-neue text-[40px] !leading-[44px] tracking-[-1.38px] md:text-[64px] md:!leading-[70.4px]"
               >
