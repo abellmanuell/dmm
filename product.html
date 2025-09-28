@@ -736,93 +736,87 @@
 
           <!--------------------------------------- Product Card ----------------------------->
           <section
-            class="mx-auto 2xl:px-0 lg:max-w-[1400px] xl:max-w-[1500px] pb-10 grid gap-12 lg:pb-[58.58px] lg:grid-cols-2 lg:items-start"
+            class="mx-auto px-4 pt-[32px] lg:pt-0 xl:px-0 lg:max-w-[1400px] xl:max-w-[1500px] pb-10 grid gap-12 lg:pb-[58.58px] lg:grid-cols-2 lg:items-start"
           >
-            <div class="px-4 2xl:px-0 pb-10">
-              <!-- Product Image -->
-              <div class="grid grid-cols-2 gap-8">
-                <div class="col-span-2">
-                  <section>
-                    <div class="relative h-[358px] p-4 lg:h-[640px]">
-                      <img
-                        class="absolute top-0 left-0 size-full object-cover h-[358px] rounded-2xl lg:h-[640px]"
-                        src="./assets/images/products/Game-10-Mega-Bundle.webp"
-                      />
-                      <article class="flex flex-col justify-between">
-                        <section class="space-y-[30px]">
-                          <div class="relative flex justify-between">
-                            <div class="flex flex-col space-y-3 uppercase">
-                              <div
-                                class="inline-flex items-center justify-center self-baseline rounded-full px-2 py-0.5 text-white bg-[#FDA32E]"
-                              >
-                                <p class="text-xs leading-[18px]">Popular</p>
-                              </div>
-                              <div
-                                class="inline-flex items-center justify-center self-baseline rounded-full px-2 py-0.5 text-white bg-[#59C254]"
-                              >
-                                <p class="text-xs leading-[18px]">
-                                  Gift Included
-                                </p>
-                              </div>
-                            </div>
-                            <section class="flex flex-col items-end space-y-1">
-                              <div
-                                class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
-                              >
-                                <img
-                                  alt="Realistic Materials"
-                                  class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
-                                  src="./assets/images/icons/icon-folders-white.svg"
-                                />
-                                <h3
-                                  class="font-bebas-neue text-sm text-white md:text-lg"
-                                >
-                                  Realistic Materials
-                                </h3>
-                              </div>
-                              <div
-                                class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
-                              >
-                                <img
-                                  alt="Free worldwide shipping"
-                                  class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
-                                  src="./assets/images/icons/icon-shipping-white.svg"
-                                />
-                                <h3
-                                  class="font-bebas-neue text-sm text-white md:text-lg"
-                                >
-                                  Free worldwide shipping
-                                </h3>
-                              </div>
-                              <div
-                                class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
-                              >
-                                <img
-                                  alt="Perfect for 1-8 People"
-                                  class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
-                                  src="./assets/images/icons/icon-users-white.svg"
-                                />
-                                <h3
-                                  class="font-bebas-neue text-sm text-white md:text-lg"
-                                >
-                                  Perfect for 1-8 People
-                                </h3>
-                              </div>
-                              <div
-                                class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
-                              >
-                                <img
-                                  alt="Gift-Ready"
-                                  class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
-                                  src="./assets/images/icons/icon-gift-white.svg"
-                                />
-                                <h3
-                                  class="font-bebas-neue text-sm text-white md:text-lg"
-                                >
-                                  Gift-Ready
-                                </h3>
-                              </div>
-                            </section>
+            <div class="swiperProductScope">
+              <div class="relative">
+                <div class="swiper swiperProduct">
+                  <div class="swiper-wrapper swiperProductWrapper">
+                    <div class="swiper-slide lg:col-span-2">
+                      <div class="relative">
+                        <div
+                          class="flex flex-col space-y-3 uppercase absolute left-4 top-4"
+                        >
+                          <div
+                            class="inline-flex items-center justify-center self-baseline rounded-full px-2 py-0.5 text-white bg-[#FDA32E]"
+                          >
+                            <p class="text-xs leading-[18px]">Popular</p>
+                          </div>
+                          <div
+                            class="inline-flex items-center justify-center self-baseline rounded-full px-2 py-0.5 text-white bg-[#59C254]"
+                          >
+                            <p class="text-xs leading-[18px]">Gift Included</p>
+                          </div>
+                        </div>
+
+                        <section
+                          class="flex flex-col items-end space-y-1 absolute right-4 top-4"
+                        >
+                          <div
+                            class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                          >
+                            <img
+                              alt="Realistic Materials"
+                              class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                              src="./assets/images/icons/icon-folders-white.svg"
+                            />
+                            <h3
+                              class="font-bebas-neue text-sm text-white md:text-lg"
+                            >
+                              Realistic Materials
+                            </h3>
+                          </div>
+                          <div
+                            class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                          >
+                            <img
+                              alt="Free worldwide shipping"
+                              class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                              src="./assets/images/icons/icon-shipping-white.svg"
+                            />
+                            <h3
+                              class="font-bebas-neue text-sm text-white md:text-lg"
+                            >
+                              Free worldwide shipping
+                            </h3>
+                          </div>
+                          <div
+                            class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                          >
+                            <img
+                              alt="Perfect for 1-8 People"
+                              class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                              src="./assets/images/icons/icon-users-white.svg"
+                            />
+                            <h3
+                              class="font-bebas-neue text-sm text-white md:text-lg"
+                            >
+                              Perfect for 1-8 People
+                            </h3>
+                          </div>
+                          <div
+                            class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                          >
+                            <img
+                              alt="Gift-Ready"
+                              class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                              src="./assets/images/icons/icon-gift-white.svg"
+                            />
+                            <h3
+                              class="font-bebas-neue text-sm text-white md:text-lg"
+                            >
+                              Gift-Ready
+                            </h3>
                           </div>
                         </section>
 
@@ -833,78 +827,316 @@
                             src="./assets/images/icons/zoom-in.svg"
                           />
                         </div>
-                      </article>
+
+                        <img
+                          class="product-image rounded-2xl w-full h-auto"
+                          src="./assets/images/products/Game-10-Mega-Bundle.webp"
+                        />
+                      </div>
                     </div>
-                  </section>
-                </div>
-                <div class="col-span-1">
-                  <section>
-                    <div class="relative h-[358px] p-4">
-                      <img
-                        class="absolute top-0 left-0 size-full object-cover h-[358px] rounded-2xl"
-                        src="./assets/images/products/product-3.webp"
-                      />
-                      <article class="flex flex-col justify-between">
-                        <section class="space-y-[30px]">
-                          <div class="relative flex justify-between">
-                            <div
-                              class="flex flex-col space-y-3 uppercase"
-                            ></div>
-                            <section
-                              class="flex flex-col items-end space-y-2"
-                            ></section>
+                    <div class="swiper-slide">
+                      <div class="relative">
+                        <div
+                          class="lg:hidden flex flex-col space-y-3 uppercase absolute left-4 top-4"
+                        >
+                          <div
+                            class="inline-flex items-center justify-center self-baseline rounded-full px-2 py-0.5 text-white bg-[#FDA32E]"
+                          >
+                            <p class="text-xs leading-[18px]">Popular</p>
+                          </div>
+                          <div
+                            class="inline-flex items-center justify-center self-baseline rounded-full px-2 py-0.5 text-white bg-[#59C254]"
+                          >
+                            <p class="text-xs leading-[18px]">Gift Included</p>
+                          </div>
+                        </div>
+
+                        <section
+                          class="lg:hidden flex flex-col items-end space-y-1 absolute right-4 top-4"
+                        >
+                          <div
+                            class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                          >
+                            <img
+                              alt="Realistic Materials"
+                              class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                              src="./assets/images/icons/icon-folders-white.svg"
+                            />
+                            <h3
+                              class="font-bebas-neue text-sm text-white md:text-lg"
+                            >
+                              Realistic Materials
+                            </h3>
+                          </div>
+                          <div
+                            class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                          >
+                            <img
+                              alt="Free worldwide shipping"
+                              class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                              src="./assets/images/icons/icon-shipping-white.svg"
+                            />
+                            <h3
+                              class="font-bebas-neue text-sm text-white md:text-lg"
+                            >
+                              Free worldwide shipping
+                            </h3>
+                          </div>
+                          <div
+                            class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                          >
+                            <img
+                              alt="Perfect for 1-8 People"
+                              class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                              src="./assets/images/icons/icon-users-white.svg"
+                            />
+                            <h3
+                              class="font-bebas-neue text-sm text-white md:text-lg"
+                            >
+                              Perfect for 1-8 People
+                            </h3>
+                          </div>
+                          <div
+                            class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                          >
+                            <img
+                              alt="Gift-Ready"
+                              class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                              src="./assets/images/icons/icon-gift-white.svg"
+                            />
+                            <h3
+                              class="font-bebas-neue text-sm text-white md:text-lg"
+                            >
+                              Gift-Ready
+                            </h3>
                           </div>
                         </section>
-                      </article>
+
+                        <!------ Zoom In Icon -->
+                        <div class="lg:hidden absolute right-4 bottom-4">
+                          <img
+                            class="h-[24px] max-w-[24px]"
+                            src="./assets/images/icons/zoom-in.svg"
+                          />
+                        </div>
+
+                        <img
+                          class="product-image rounded-2xl w-full h-auto"
+                          src="./assets/images/products/Game-10-Mega-Bundle.webp"
+                        />
+                      </div>
                     </div>
-                  </section>
-                </div>
-                <div class="col-span-1">
-                  <section>
-                    <div class="relative h-[358px] p-4">
-                      <img
-                        class="absolute top-0 left-0 size-full object-cover h-[358px] rounded-2xl"
-                        src="./assets/images/products/product-2.webp"
-                      />
-                      <article class="flex flex-col justify-between">
-                        <section class="space-y-[30px]">
-                          <div class="relative flex justify-between">
-                            <div
-                              class="flex flex-col space-y-3 uppercase"
-                            ></div>
-                            <section
-                              class="flex flex-col items-end space-y-2"
-                            ></section>
+                    <div class="swiper-slide">
+                      <div class="relative">
+                        <div
+                          class="lg:hidden flex flex-col space-y-3 uppercase absolute left-4 top-4"
+                        >
+                          <div
+                            class="inline-flex items-center justify-center self-baseline rounded-full px-2 py-0.5 text-white bg-[#FDA32E]"
+                          >
+                            <p class="text-xs leading-[18px]">Popular</p>
+                          </div>
+                          <div
+                            class="inline-flex items-center justify-center self-baseline rounded-full px-2 py-0.5 text-white bg-[#59C254]"
+                          >
+                            <p class="text-xs leading-[18px]">Gift Included</p>
+                          </div>
+                        </div>
+
+                        <section
+                          class="lg:hidden flex flex-col items-end space-y-1 absolute right-4 top-4"
+                        >
+                          <div
+                            class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                          >
+                            <img
+                              alt="Realistic Materials"
+                              class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                              src="./assets/images/icons/icon-folders-white.svg"
+                            />
+                            <h3
+                              class="font-bebas-neue text-sm text-white md:text-lg"
+                            >
+                              Realistic Materials
+                            </h3>
+                          </div>
+                          <div
+                            class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                          >
+                            <img
+                              alt="Free worldwide shipping"
+                              class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                              src="./assets/images/icons/icon-shipping-white.svg"
+                            />
+                            <h3
+                              class="font-bebas-neue text-sm text-white md:text-lg"
+                            >
+                              Free worldwide shipping
+                            </h3>
+                          </div>
+                          <div
+                            class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                          >
+                            <img
+                              alt="Perfect for 1-8 People"
+                              class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                              src="./assets/images/icons/icon-users-white.svg"
+                            />
+                            <h3
+                              class="font-bebas-neue text-sm text-white md:text-lg"
+                            >
+                              Perfect for 1-8 People
+                            </h3>
+                          </div>
+                          <div
+                            class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                          >
+                            <img
+                              alt="Gift-Ready"
+                              class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                              src="./assets/images/icons/icon-gift-white.svg"
+                            />
+                            <h3
+                              class="font-bebas-neue text-sm text-white md:text-lg"
+                            >
+                              Gift-Ready
+                            </h3>
                           </div>
                         </section>
-                      </article>
+
+                        <!------ Zoom In Icon -->
+                        <div class="lg:hidden absolute right-4 bottom-4">
+                          <img
+                            class="h-[24px] max-w-[24px]"
+                            src="./assets/images/icons/zoom-in.svg"
+                          />
+                        </div>
+
+                        <img
+                          class="product-image rounded-2xl w-full h-auto"
+                          src="./assets/images/products/Game-10-Mega-Bundle.webp"
+                        />
+                      </div>
                     </div>
-                  </section>
-                </div>
-                <div class="col-span-2">
-                  <section>
-                    <div class="relative h-[358px] p-4 lg:h-[640px]">
-                      <img
-                        class="absolute top-0 left-0 size-full object-cover h-[358px] rounded-2xl lg:h-[640px]"
-                        src="./assets/images/products/product-4.webp"
-                      />
-                      <article class="flex flex-col justify-between">
-                        <section class="space-y-[30px]">
-                          <div class="relative flex justify-between">
-                            <div
-                              class="flex flex-col space-y-3 uppercase"
-                            ></div>
-                            <section
-                              class="flex flex-col items-end space-y-2"
-                            ></section>
+                    <div class="swiper-slide lg:col-span-2">
+                      <div class="relative">
+                        <div
+                          class="lg:hidden flex flex-col space-y-3 uppercase absolute left-4 top-4"
+                        >
+                          <div
+                            class="inline-flex items-center justify-center self-baseline rounded-full px-2 py-0.5 text-white bg-[#FDA32E]"
+                          >
+                            <p class="text-xs leading-[18px]">Popular</p>
+                          </div>
+                          <div
+                            class="inline-flex items-center justify-center self-baseline rounded-full px-2 py-0.5 text-white bg-[#59C254]"
+                          >
+                            <p class="text-xs leading-[18px]">Gift Included</p>
+                          </div>
+                        </div>
+
+                        <section
+                          class="lg:hidden flex flex-col items-end space-y-1 absolute right-4 top-4"
+                        >
+                          <div
+                            class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                          >
+                            <img
+                              alt="Realistic Materials"
+                              class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                              src="./assets/images/icons/icon-folders-white.svg"
+                            />
+                            <h3
+                              class="font-bebas-neue text-sm text-white md:text-lg"
+                            >
+                              Realistic Materials
+                            </h3>
+                          </div>
+                          <div
+                            class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                          >
+                            <img
+                              alt="Free worldwide shipping"
+                              class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                              src="./assets/images/icons/icon-shipping-white.svg"
+                            />
+                            <h3
+                              class="font-bebas-neue text-sm text-white md:text-lg"
+                            >
+                              Free worldwide shipping
+                            </h3>
+                          </div>
+                          <div
+                            class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                          >
+                            <img
+                              alt="Perfect for 1-8 People"
+                              class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                              src="./assets/images/icons/icon-users-white.svg"
+                            />
+                            <h3
+                              class="font-bebas-neue text-sm text-white md:text-lg"
+                            >
+                              Perfect for 1-8 People
+                            </h3>
+                          </div>
+                          <div
+                            class="bg-dark-burgundy-500 relative inline-flex items-center gap-2 rounded-full px-3 py-[3px]"
+                          >
+                            <img
+                              alt="Gift-Ready"
+                              class="h-[16px] max-w-[16px] md:h-[18px] md:max-w-[17px]"
+                              src="./assets/images/icons/icon-gift-white.svg"
+                            />
+                            <h3
+                              class="font-bebas-neue text-sm text-white md:text-lg"
+                            >
+                              Gift-Ready
+                            </h3>
                           </div>
                         </section>
-                      </article>
+
+                        <!------ Zoom In Icon -->
+                        <div class="lg:hidden absolute right-4 bottom-4">
+                          <img
+                            class="h-[24px] max-w-[24px]"
+                            src="./assets/images/icons/zoom-in.svg"
+                          />
+                        </div>
+
+                        <img
+                          class="product-image rounded-2xl w-full h-auto"
+                          src="./assets/images/products/Game-10-Mega-Bundle.webp"
+                        />
+                      </div>
                     </div>
-                  </section>
+                  </div>
                 </div>
+
+                <button
+                  class="lg:hidden swiper-prev absolute top-[55%] left-2 z-5 -translate-y-1/2 rounded-full bg-white/60 p-2 transition"
+                >
+                  <img
+                    src="./assets/images/icons/icon-greater-than.svg"
+                    alt="Back Arrow Icon"
+                    width="24"
+                    height="24"
+                    class="h-[18px] w-[18px] rotate-180"
+                  /></button
+                ><button
+                  class="lg:hidden swiper-next absolute top-[55%] right-2 z-5 -translate-y-1/2 rounded-full bg-white/60 p-2 text-white transition"
+                >
+                  <img
+                    src="./assets/images/icons/icon-greater-than.svg"
+                    alt="Forward Arrow Icon"
+                    width="24"
+                    height="24"
+                    class="h-[18px] w-[18px]"
+                  />
+                </button>
               </div>
-              <!-- Product Image -->
+
+              <div class="mt-4 flex space-x-2 custom-pagination"></div>
             </div>
 
             <div

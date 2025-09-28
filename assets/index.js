@@ -88,9 +88,6 @@ new Swiper(".mySwiper", {
     pauseOnMouseEnter: true,
   },
   breakpoints: {
-    0: {
-      spaceBetween: 32,
-    },
     340: {
       slidesPerView: "auto",
       centeredSlides: true,
@@ -112,6 +109,7 @@ new Swiper(".mySwiper", {
     },
   },
 });
+
 function initScopedSwiper(scopeEl) {
   const swiperContainer = scopeEl.querySelector(".swiperPackage");
   const swiperPackageWrapper = scopeEl.querySelector(".swiperPackageWrapper");
@@ -211,3 +209,130 @@ function initScopedSwiper(scopeEl) {
 document.querySelectorAll(".swiperScope").forEach((scope) => {
   initScopedSwiper(scope);
 });
+
+/********************************
+ *
+ *  Product Image Swipper
+ *
+ * ******************************/
+function initResponsiveSwiper() {
+  const scope = document.querySelector(".swiperProductScope");
+  const swiperContainer = scope.querySelector(".swiperProduct");
+  const swiperWrapper = scope.querySelector(".swiper-wrapper");
+  const customPagination = scope.querySelector(".custom-pagination");
+
+  let swiperInstance = null;
+
+  function buildThumbs(slides) {
+    customPagination.innerHTML = "";
+    slides.forEach((slide, index) => {
+      const img =
+        slide.querySelector("img.product-image") ||
+        slide.querySelector("img.w-full") ||
+        slide.querySelector("img.rounded-2xl") ||
+        Array.from(slide.querySelectorAll("img")).pop();
+
+      const src = img ? img.src : "";
+
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className =
+        "swiper-thumb w-[80px] h-[80px] overflow-hidden rounded-2xl border-2 border-transparent opacity-60";
+      btn.innerHTML = `<img src="${src}" class="w-full h-full object-cover" alt="thumb-${index}" />`;
+
+      btn.addEventListener("click", () => {
+        if (swiperInstance) {
+          swiperInstance.slideToLoop(index, 300);
+        }
+      });
+
+      customPagination.appendChild(btn);
+    });
+  }
+
+  function updateThumbs(activeIndex) {
+    const btns = customPagination.querySelectorAll("button");
+    btns.forEach((btn, i) => {
+      if (i === activeIndex) {
+        btn.classList.add("border-pumpkin-500");
+        btn.classList.remove("opacity-60");
+      } else {
+        btn.classList.remove("border-pumpkin-500");
+        btn.classList.add("opacity-60");
+      }
+    });
+  }
+
+  function enableSwiper() {
+    if (!swiperInstance) {
+      swiperContainer.classList.add("swiper");
+      swiperWrapper.classList.add("swiper-wrapper");
+      swiperWrapper.classList.remove("grid", "grid-cols-2", "gap-6");
+
+      swiperInstance = new Swiper(swiperContainer, {
+        loop: true,
+        speed: 500,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+        navigation: {
+          nextEl: ".swiper-next",
+          prevEl: ".swiper-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            centeredSlides: true,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+            centeredSlides: false,
+          },
+        },
+        on: {
+          init: function () {
+            const realSlides = Array.from(this.slides).filter(
+              (s) => !s.classList.contains("swiper-slide-duplicate")
+            );
+            buildThumbs(realSlides);
+            updateThumbs(this.realIndex);
+          },
+          slideChange: function () {
+            updateThumbs(this.realIndex);
+          },
+        },
+      });
+    }
+    customPagination.style.display = "flex"; // ✅ Show pagination on mobile
+  }
+
+  function disableSwiper() {
+    if (swiperInstance) {
+      swiperInstance.destroy(true, true);
+      swiperInstance = null;
+    }
+
+    swiperContainer.classList.remove("swiper");
+    swiperWrapper.classList.remove("swiper-wrapper");
+    swiperWrapper.classList.add("grid", "grid-cols-2", "gap-6");
+
+    customPagination.style.display = "none"; // ✅ Hide pagination on desktop
+  }
+
+  function toggleSwiper() {
+    if (window.innerWidth <= 1024) {
+      enableSwiper();
+    } else {
+      disableSwiper();
+    }
+  }
+
+  toggleSwiper();
+  window.addEventListener("resize", toggleSwiper);
+}
+
+initResponsiveSwiper();
