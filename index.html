@@ -923,6 +923,7 @@
                 >
                   How it<br />works?
                 </h3>
+
                 <div
                   class="relative aspect-square h-[122px] w-full max-w-[149.76px] overflow-clip rounded-lg md:h-[179px] md:max-w-[221.42px]"
                 >
@@ -930,10 +931,10 @@
                     src="./assets/images/hero-aside-video-poster.webp"
                     alt="Hero Video"
                     class="size-full h-[126.97px] w-[149.76px] object-cover md:h-[187.72px] md:w-[221.42px]"
-                    height="187.72"
-                    width="221.42"
-                  /><button
-                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/10 p-4 hover:bg-white/20"
+                  />
+                  <button
+                    class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/10 p-4 hover:bg-white/20"
+                    data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
                   >
                     <svg
                       fill="currentColor"
@@ -942,9 +943,6 @@
                       width="1em"
                       xmlns="http://www.w3.org/2000/svg"
                       class="text-pumpkin-500 size-8"
-                      stroke="currentColor"
-                      stroke-width="0"
-                      aria-hidden="true"
                     >
                       <path
                         d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
@@ -5300,7 +5298,8 @@
                       <img
                         src="./assets/images/testimonials/live-action-3.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
                       >
                         <svg
                           fill="currentColor"
@@ -5329,7 +5328,8 @@
                       <img
                         src="./assets/images/testimonials/live-action-4.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
                       >
                         <svg
                           fill="currentColor"
@@ -5358,7 +5358,8 @@
                       <img
                         src="./assets/images/testimonials/live-action-1.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
                       >
                         <svg
                           fill="currentColor"
@@ -5387,7 +5388,8 @@
                       <img
                         src="./assets/images/testimonials/live-action-2.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
                       >
                         <svg
                           fill="currentColor"
@@ -5416,7 +5418,8 @@
                       <img
                         src="./assets/images/testimonials/live-action-3.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
                       >
                         <svg
                           fill="currentColor"
@@ -5445,7 +5448,8 @@
                       <img
                         src="./assets/images/testimonials/live-action-4.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
                       >
                         <svg
                           fill="currentColor"
@@ -6422,6 +6426,31 @@
       </div>
     </div>
   </body>
+
+  <!-- Video Modal -->
+  <div
+    id="videoModal"
+    class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50"
+  >
+    <button
+      id="videoClose"
+      class="absolute top-4 right-4 text-white text-3xl font-bold z-50"
+    >
+      ✕
+    </button>
+    <div
+      id="videoContent"
+      class="w-[90vw] max-w-[900px] aspect-video bg-black rounded-xl overflow-hidden"
+    >
+      <iframe
+        id="videoFrame"
+        class="w-full h-full"
+        src=""
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
 </html>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

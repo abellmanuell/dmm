@@ -10,7 +10,6 @@
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
     <link href="./assets/output.css" rel="stylesheet" />
-    <script src="./assets/index.js" defer></script>
 
     <style>
       .paper-mask {
@@ -736,7 +735,7 @@
 
           <!--------------------------------------- Product Card ----------------------------->
           <section
-            class="mx-auto px-4 pt-[32px] lg:pt-0 xl:px-0 lg:max-w-[1400px] xl:max-w-[1500px] pb-10 grid gap-12 lg:pb-[58.58px] lg:grid-cols-2 lg:items-start"
+            class="mx-auto px-2 sms:px-4 pt-[32px] lg:pt-0 xl:px-0 lg:max-w-[1400px] xl:max-w-[1500px] pb-10 grid gap-12 lg:pb-[58.58px] lg:grid-cols-2 lg:items-start"
           >
             <div class="swiperProductScope">
               <div class="relative">
@@ -1215,7 +1214,8 @@
                         alt="See How It Work Image"
                         src="./assets/images/hero-aside-video-poster.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full p-4 cursor-pointer hover:bg-white/20 bg-white/0"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full p-4 cursor-pointer hover:bg-white/20 bg-white/0"
+                        data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
                       >
                         <svg
                           stroke="currentColor"
@@ -1235,6 +1235,31 @@
                           ></path>
                         </svg>
                       </button>
+
+                      <!-- Video Modal -->
+                      <div
+                        id="videoModal"
+                        class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50"
+                      >
+                        <button
+                          id="videoClose"
+                          class="absolute top-4 right-4 text-white text-3xl font-bold z-50"
+                        >
+                          ✕
+                        </button>
+                        <div
+                          class="w-[90vw] max-w-[900px] aspect-video bg-black rounded-xl overflow-hidden"
+                        >
+                          <iframe
+                            id="videoFrame"
+                            class="w-full h-full"
+                            src=""
+                            frameborder="0"
+                            allow="autoplay; fullscreen"
+                            allowfullscreen
+                          ></iframe>
+                        </div>
+                      </div>
                     </div>
                     <h3
                       class="font-bebas-neue text-[21.64px] !leading-[25.968px] -tracking-[0.59px]"
@@ -2049,7 +2074,8 @@
                       <img
                         src="./assets/images/testimonials/live-action-3.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        data-video=""
                       >
                         <svg
                           fill="currentColor"
@@ -2078,7 +2104,7 @@
                       <img
                         src="./assets/images/testimonials/live-action-4.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
                       >
                         <svg
                           fill="currentColor"
@@ -2107,7 +2133,7 @@
                       <img
                         src="./assets/images/testimonials/live-action-1.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
                       >
                         <svg
                           fill="currentColor"
@@ -2136,7 +2162,7 @@
                       <img
                         src="./assets/images/testimonials/live-action-2.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
                       >
                         <svg
                           fill="currentColor"
@@ -2165,7 +2191,7 @@
                       <img
                         src="./assets/images/testimonials/live-action-3.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
                       >
                         <svg
                           fill="currentColor"
@@ -2194,7 +2220,7 @@
                       <img
                         src="./assets/images/testimonials/live-action-4.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
                       >
                         <svg
                           fill="currentColor"
@@ -2224,7 +2250,7 @@
                         src="./assets/images/testimonials/live-action-1.webp"
                       />
                       <button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
                       >
                         <svg
                           fill="currentColor"
@@ -2253,7 +2279,7 @@
                       <img
                         src="./assets/images/testimonials/live-action-2.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
                       >
                         <svg
                           fill="currentColor"
@@ -2282,7 +2308,7 @@
                       <img
                         src="./assets/images/testimonials/live-action-3.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
                       >
                         <svg
                           fill="currentColor"
@@ -2311,7 +2337,7 @@
                       <img
                         src="./assets/images/testimonials/live-action-4.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
                       >
                         <svg
                           fill="currentColor"
@@ -2340,7 +2366,7 @@
                       <img
                         src="./assets/images/testimonials/live-action-1.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
                       >
                         <svg
                           fill="currentColor"
@@ -2369,7 +2395,7 @@
                       <img
                         src="./assets/images/testimonials/live-action-2.webp"
                       /><button
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
+                        class="video-trigger absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-white/80 p-4 hover:bg-white/90"
                       >
                         <svg
                           fill="currentColor"
@@ -4839,3 +4865,4 @@
 </html>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./assets/index.js" defer></script>

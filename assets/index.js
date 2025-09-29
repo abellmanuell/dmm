@@ -1,4 +1,29 @@
-// import Swiper from "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css";
+const videoModal = document.getElementById("videoModal");
+const videoFrame = document.getElementById("videoFrame");
+const videoContent = document.getElementById("videoContent");
+const videoClose = document.getElementById("videoClose");
+
+// Open modal
+document.querySelectorAll(".video-trigger").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const videoUrl = btn.getAttribute("data-video");
+    videoFrame.src = videoUrl;
+
+    videoModal.classList.remove("hidden");
+    videoModal.classList.add("flex");
+
+    videoContent.classList.remove("video-animate");
+    void videoContent.offsetWidth;
+    videoContent.classList.add("video-animate");
+  });
+});
+
+// Close modal
+videoClose.addEventListener("click", () => {
+  videoModal.classList.add("hidden");
+  videoModal.classList.remove("flex");
+  videoFrame.src = "";
+});
 
 document.querySelectorAll(".mi-item").forEach((item) => {
   const header = item.querySelector(".mi-header");
@@ -197,7 +222,7 @@ function initScopedSwiper(scopeEl) {
       swiperContainer.classList.remove("swiper");
       swiperPackageWrapper.classList.add("grid-cols-2", "gap-6");
       swiperPackageWrapper.setAttribute("style", "display:grid;");
-      customPagination.innerHTML = ""; // remove buttons on mobile
+      customPagination.innerHTML = "";
     }
   }
 
@@ -217,6 +242,7 @@ document.querySelectorAll(".swiperScope").forEach((scope) => {
  * ******************************/
 function initResponsiveSwiper() {
   const scope = document.querySelector(".swiperProductScope");
+  if (!scope) return;
   const swiperContainer = scope.querySelector(".swiperProduct");
   const swiperWrapper = scope.querySelector(".swiper-wrapper");
   const customPagination = scope.querySelector(".custom-pagination");
@@ -267,7 +293,7 @@ function initResponsiveSwiper() {
     if (!swiperInstance) {
       swiperContainer.classList.add("swiper");
       swiperWrapper.classList.add("swiper-wrapper");
-      swiperWrapper.classList.remove("grid", "grid-cols-2", "gap-6");
+      swiperWrapper.classList.remove("grid", "grid-cols-2", "gap-8");
 
       swiperInstance = new Swiper(swiperContainer, {
         loop: true,
@@ -307,7 +333,7 @@ function initResponsiveSwiper() {
         },
       });
     }
-    customPagination.style.display = "flex"; // ✅ Show pagination on mobile
+    customPagination.style.display = "flex";
   }
 
   function disableSwiper() {
@@ -318,9 +344,9 @@ function initResponsiveSwiper() {
 
     swiperContainer.classList.remove("swiper");
     swiperWrapper.classList.remove("swiper-wrapper");
-    swiperWrapper.classList.add("grid", "grid-cols-2", "gap-6");
+    swiperWrapper.classList.add("grid", "grid-cols-2", "gap-8");
 
-    customPagination.style.display = "none"; // ✅ Hide pagination on desktop
+    customPagination.style.display = "none";
   }
 
   function toggleSwiper() {
@@ -353,16 +379,26 @@ document.querySelectorAll(".zoom-trigger").forEach((btn) => {
 });
 
 // Close button
-document.getElementById("zoomClose").addEventListener("click", () => {
-  const zoomModal = document.getElementById("zoomModal");
-  zoomModal.classList.add("hidden");
-  zoomModal.classList.remove("flex");
-});
+const zoomClose = document.getElementById("zoomClose");
+if (zoomClose) {
+  zoomClose.addEventListener("click", () => {
+    const zoomModal = document.getElementById("zoomModal");
+    if (zoomModal) {
+      zoomModal.classList.add("hidden");
+      zoomModal.classList.remove("flex");
+    }
+  });
+}
 
 // Close on background click
-document.getElementById("zoomModal").addEventListener("click", (e) => {
-  if (e.target.id === "zoomModal") {
-    e.currentTarget.classList.add("hidden");
-    e.currentTarget.classList.remove("flex");
-  }
-});
+const zoomModal = document.getElementById("zoomModal");
+
+if (zoomModal) {
+  // Close when clicking on the dark background
+  zoomModal.addEventListener("click", (e) => {
+    if (e.target.id === "zoomModal") {
+      zoomModal.classList.add("hidden");
+      zoomModal.classList.remove("flex");
+    }
+  });
+}
