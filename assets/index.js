@@ -1,3 +1,34 @@
+new Swiper(".mySwiper", {
+  loop: true,
+  speed: 5000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+  breakpoints: {
+    340: {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 32,
+      freeMode: true,
+    },
+    768: {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 32,
+      freeMode: true,
+    },
+    1024: {
+      slidesPerView: "auto",
+      spaceBetween: 32,
+      centeredSlides: true,
+      slidesOffsetBefore: 50,
+      slidesOffsetAfter: 50,
+    },
+  },
+});
+
 const videoModal = document.getElementById("videoModal");
 const videoFrame = document.getElementById("videoFrame");
 const videoContent = document.getElementById("videoContent");
@@ -103,37 +134,6 @@ toggleLayout();
 
 // Run on resize
 window.addEventListener("resize", toggleLayout);
-
-new Swiper(".mySwiper", {
-  loop: true,
-  speed: 5000,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true,
-  },
-  breakpoints: {
-    340: {
-      slidesPerView: "auto",
-      centeredSlides: true,
-      spaceBetween: 32,
-      freeMode: true,
-    },
-    768: {
-      slidesPerView: "auto",
-      centeredSlides: true,
-      spaceBetween: 32,
-      freeMode: true,
-    },
-    1024: {
-      slidesPerView: "auto",
-      spaceBetween: 32,
-      centeredSlides: true,
-      slidesOffsetBefore: 50,
-      slidesOffsetAfter: 50,
-    },
-  },
-});
 
 function initScopedSwiper(scopeEl) {
   const swiperContainer = scopeEl.querySelector(".swiperPackage");
