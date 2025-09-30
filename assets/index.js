@@ -314,7 +314,7 @@ function initResponsiveSwiper() {
       const btn = document.createElement("button");
       btn.type = "button";
       btn.className =
-        "swiper-thumb w-[80px] h-[80px] overflow-hidden rounded-2xl border-2 border-transparent opacity-60";
+        "swiper-thumb w-full sm:max-w-[80px] h-auto overflow-hidden rounded-2xl border-2 border-transparent opacity-60";
       btn.innerHTML = `<img src="${src}" class="w-full h-full object-cover" alt="thumb-${index}" />`;
 
       btn.addEventListener("click", () => {
@@ -364,9 +364,14 @@ function initResponsiveSwiper() {
             spaceBetween: 16,
             centeredSlides: true,
           },
+          340: {
+            slidesPerView: "auto",
+            centeredSlides: false,
+            spaceBetween: 32,
+          },
           768: {
-            slidesPerView: 2,
-            spaceBetween: 24,
+            slidesPerView: "auto",
+            spaceBetween: 32,
             centeredSlides: false,
           },
         },
