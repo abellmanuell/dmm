@@ -176,6 +176,10 @@
   #zoomModal img {
     animation: zoomIn 0.3s ease-out;
   }
+
+  .no-scroll {
+    overflow: hidden;
+  }
 }
 
 @layer components {

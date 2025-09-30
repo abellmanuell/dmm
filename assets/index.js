@@ -29,6 +29,29 @@ new Swiper(".mySwiper", {
   },
 });
 
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+const hamburgerIcon = document.getElementById("hamburgerIcon");
+const closeIcon = document.getElementById("closeIcon");
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = !mobileMenu.classList.contains("hidden");
+
+  if (isOpen) {
+    // Close menu
+    mobileMenu.classList.add("hidden");
+    hamburgerIcon.classList.remove("hidden");
+    closeIcon.classList.add("hidden");
+    document.body.classList.remove("no-scroll");
+  } else {
+    // Open menu
+    mobileMenu.classList.remove("hidden");
+    hamburgerIcon.classList.add("hidden");
+    closeIcon.classList.remove("hidden");
+    document.body.classList.add("no-scroll");
+  }
+});
+
 const dropdownBtn = document.getElementById("dropdownBtn");
 const dropdownMenu = document.getElementById("dropdownMenu");
 const dropdownLabel = document.getElementById("dropdownLabel");
