@@ -619,7 +619,7 @@
                   >
                 </div>
               </div>
-              <div class="flex items-center space-x-6">
+              <div class="flex items-center space-x-[27px]">
                 <a
                   href="./category-page.html"
                   class="hidden items-center space-x-4 rounded-full px-7 py-2 font-bold uppercase outline-1 duration-150 ease-in md:block"
@@ -634,13 +634,35 @@
                     height="20"
                     width="20"
                   /><span
-                    class="bg-pumpkin-500 absolute -top-2 left-3 inline-flex min-h-[18px] min-w-[18px] items-center justify-center rounded-full text-sm font-semibold shadow"
+                    class="bg-pumpkin-500 absolute -top-2 left-3 inline-flex h-[18px] w-[18px] items-center justify-center rounded-full text-sm font-semibold shadow"
                     >3</span
                   ></a
-                ><button
+                >
+                <button
+                  id="menuToggle"
                   class="inline-block cursor-pointer lg:hidden outline-none"
                 >
+                  <svg
+                    id="closeIcon"
+                    class="hidden"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    height="24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+
                   <img
+                    id="hamburgerIcon"
                     src="./assets/images/icons/icon-menu.svg"
                     alt=""
                     width="24"
@@ -650,14 +672,15 @@
               </div>
             </div>
             <div
-              class="bg-chamois-500 md:bg-chamois-500 border-chamois-600 fixed inset-x-0 top-26 bottom-0 hidden overflow-clip border-t pt-4 shadow lg:hidden"
+              id="mobileMenu"
+              class="bg-chamois-500 md:bg-chamois-500 border-chamois-600 fixed inset-x-0 top-26 bottom-0 hidden overflow-clip border-t pt-12 shadow lg:hidden"
             >
               <div
                 class="bg-noise absolute inset-0 h-svh opacity-20 mix-blend-overlay"
               ></div>
               <div class="relative z-20">
                 <div
-                  class="mx-auto flex max-w-7xl gap-10 px-4 max-lg:flex-col lg:max-w-[1400px] lg:justify-between lg:px-8 xl:max-w-[1500px] 2xl:px-0"
+                  class="mx-auto flex max-w-7xl gap-12 px-4 max-lg:flex-col lg:max-w-[1400px] lg:justify-between lg:px-8 xl:max-w-[1500px] 2xl:px-0"
                 >
                   <a
                     href="./detective-cases-page.html"
@@ -1550,3 +1573,5 @@
     </div>
   </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
