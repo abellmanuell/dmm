@@ -827,15 +827,53 @@
           <div
             class="mx-auto max-w-7xl px-4 2xl:px-0 lg:max-w-[1400px] xl:max-w-[1500px] pb-12"
           >
-            <div
-              class="flex flex-col xxs:flex-row justify-between text-lg lg:py-20 py-[48px]"
-            >
+          <!-- SORT SECTION -->
+            <div class="flex flex-col xxs:flex-row justify-between text-lg lg:py-20 py-[48px] space-y-3 xxs:space-y-0">
               <p class="leading-6">Showing 20 results</p>
-              <p class="leading-6 space-x-2">
-                <span> Sort: </span>
-                <b>Bestsellers</b>
-              </p>
+            <div class="flex flex-col xxxs:flex-row">
+              <span> Sort: </span>
+              <!-- Custom Dropdown -->
+              <div class="relative inline-block text-left font-bold">
+                <button
+                  id="dropdownBtn"
+                  class="inline-flex flex-col xxs:flex-row justify-between xxxs:items-center xxxs:w-40 xxxs:px-4  focus:outline-none"
+                >
+                  <span id="dropdownLabel">Bestsellers</span>
+                  <svg
+                    class="ml-2 h-5 w-5 hidden xxs:inline-block"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownMenu"
+                  class="hidden absolute right-0 mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg z-20"
+                >
+                  <ul class="py-1 text-gray-700">
+                    <li>
+                      <button class="block w-full text-left px-4 py-2 hover:bg-gray-100" data-value="Bestsellers">
+                        Bestsellers
+                      </button>
+                    </li>
+                    <li>
+                      <button class="block w-full text-left px-4 py-2 hover:bg-gray-100" data-value="Newest">
+                        Newest
+                      </button>
+                    </li>
+                  
+                  </ul>
+                </div>
+              </div>
+              </div>
             </div>
+          <!-- END SORT SECTION -->
 
             <!------------------- PRODUCT LISTS --------------->
             <section

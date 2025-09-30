@@ -29,6 +29,30 @@ new Swiper(".mySwiper", {
   },
 });
 
+const dropdownBtn = document.getElementById("dropdownBtn");
+const dropdownMenu = document.getElementById("dropdownMenu");
+const dropdownLabel = document.getElementById("dropdownLabel");
+
+// Toggle dropdown
+dropdownBtn.addEventListener("click", () => {
+  dropdownMenu.classList.toggle("hidden");
+});
+
+// Handle selection
+dropdownMenu.querySelectorAll("button").forEach((item) => {
+  item.addEventListener("click", (e) => {
+    dropdownLabel.textContent = e.target.dataset.value;
+    dropdownMenu.classList.add("hidden");
+  });
+});
+
+// Close dropdown when clicking outside
+document.addEventListener("click", (e) => {
+  if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+    dropdownMenu.classList.add("hidden");
+  }
+});
+
 const videoModal = document.getElementById("videoModal");
 const videoFrame = document.getElementById("videoFrame");
 const videoContent = document.getElementById("videoContent");
