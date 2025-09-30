@@ -2633,6 +2633,11 @@
       height: 622px !important;
     }
   }
+  .lg\:h-\[187px\] {
+    @media (width >= 64rem) {
+      height: 187px;
+    }
+  }
   .lg\:\!w-\[416px\] {
     @media (width >= 64rem) {
       width: 416px !important;
@@ -2926,6 +2931,11 @@
   .xl\:inline-block {
     @media (width >= 80rem) {
       display: inline-block;
+    }
+  }
+  .xl\:h-\[187px\] {
+    @media (width >= 80rem) {
+      height: 187px;
     }
   }
   .xl\:max-w-\[1500px\] {
