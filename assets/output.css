@@ -1,5 +1,5 @@
 /*! tailwindcss v4.1.13 | MIT License | https://tailwindcss.com */
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @layer properties;
 @layer theme, base, components, utilities;
@@ -55,7 +55,7 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --font-nunito: "Nunito Variable", sans-serif;
+    --font-nunito: "Nunito", sans-serif;
     --font-bebas-neue: "Bebas Neue", sans-serif;
     --color-chamois-500: oklch(89.659% 0.04245 66.086);
     --color-chamois-600: oklch(82.315% 0.07447 65.815);
@@ -238,9 +238,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-1\/2 {
     top: calc(1/2 * 100%);
   }
@@ -294,9 +291,6 @@
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
-  }
-  .left-1 {
-    left: calc(var(--spacing) * 1);
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
@@ -402,9 +396,6 @@
   }
   .inline-flex {
     display: inline-flex;
-  }
-  .table {
-    display: table;
   }
   .aspect-square {
     aspect-ratio: 1 / 1;
@@ -557,9 +548,6 @@
   .w-2 {
     width: calc(var(--spacing) * 2);
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
   .w-3\/4 {
     width: calc(3/4 * 100%);
   }
@@ -686,9 +674,6 @@
   .min-w-\[71\.35px\] {
     min-width: 71.35px;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .flex-shrink-0 {
     flex-shrink: 0;
   }
@@ -701,19 +686,8 @@
   .grow {
     flex-grow: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .-translate-x-1 {
-    --tw-translate-x: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
@@ -944,13 +918,6 @@
       margin-inline-end: calc(3.24px * calc(1 - var(--tw-space-x-reverse)));
     }
   }
-  .space-x-\[5px\] {
-    :where(& > :not(:last-child)) {
-      --tw-space-x-reverse: 0;
-      margin-inline-start: calc(5px * var(--tw-space-x-reverse));
-      margin-inline-end: calc(5px * calc(1 - var(--tw-space-x-reverse)));
-    }
-  }
   .space-x-\[15px\] {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
@@ -1154,10 +1121,6 @@
     --tw-gradient-position: to top in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-  .from-black {
-    --tw-gradient-from: var(--color-black);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
   .from-black\/45 {
     --tw-gradient-from: color-mix(in srgb, #000 45%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1174,9 +1137,6 @@
   }
   .object-cover {
     object-fit: cover;
-  }
-  .p-0 {
-    padding: calc(var(--spacing) * 0);
   }
   .p-0\.5 {
     padding: calc(var(--spacing) * 0.5);
@@ -1207,9 +1167,6 @@
   }
   .\!py-\[10px\] {
     padding-block: 10px !important;
-  }
-  .py-0 {
-    padding-block: calc(var(--spacing) * 0);
   }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
@@ -1327,9 +1284,6 @@
   }
   .pb-\[43px\] {
     padding-bottom: 43px;
-  }
-  .pl-0 {
-    padding-left: calc(var(--spacing) * 0);
   }
   .pl-0\.5 {
     padding-left: calc(var(--spacing) * 0.5);
@@ -1578,9 +1532,6 @@
   .uppercase {
     text-transform: uppercase;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-20 {
     opacity: 20%;
   }
@@ -1618,10 +1569,6 @@
   }
   .ring-offset-\[\#FFA5A0\] {
     --tw-ring-offset-color: #FFA5A0;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .outline-1 {
     outline-style: var(--tw-outline-style);
@@ -2009,11 +1956,6 @@
   .sm\:overflow-visible {
     @media (width >= 40rem) {
       overflow: visible;
-    }
-  }
-  .sm\:px-4 {
-    @media (width >= 40rem) {
-      padding-inline: calc(var(--spacing) * 4);
     }
   }
   .md\:left-10 {
@@ -2728,11 +2670,6 @@
   .lg\:pt-0 {
     @media (width >= 64rem) {
       padding-top: calc(var(--spacing) * 0);
-    }
-  }
-  .lg\:pt-1 {
-    @media (width >= 64rem) {
-      padding-top: calc(var(--spacing) * 1);
     }
   }
   .lg\:pt-4 {
